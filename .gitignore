@@ -1,0 +1,9 @@
+# OS
+.DS_Store
+
+# IDEA
+.vscode
+.idea
+
+# Kicad
+*kicad_pcb.lck
