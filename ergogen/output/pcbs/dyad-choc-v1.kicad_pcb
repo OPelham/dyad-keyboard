@@ -4,7 +4,7 @@
 
   (page A3)
   (title_block
-    (title Dyad-V1)
+    (title dyad-choc-v1)
     (rev v1.0.0)
     (company Unknown)
   )
@@ -3085,12 +3085,8 @@
           (fp_text user col4 (at 13.97 -6.3 -7) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
   
           
-          (fp_text user "Nice!Nano" (at 3.7 1.2 -97) (layer F.SilkS knockout) (effects (font (size 1.0 1.0) (thickness 0.15))))
-          (fp_text user "Place face down." (at 3.7 -0.55 -97) (layer F.SilkS) (effects (font (size 1.0 1.0) (thickness 0.15))))
-          (fp_text user "Solder jumpers on back." (at 3.7 -1.8 -97) (layer F.SilkS) (effects (font (size 1.0 1.0) (thickness 0.15))))
-          (fp_text user "Nice!Nano" (at 3.7 1.2 -97) (layer B.SilkS knockout) (effects (font (size 1.0 1.0) (thickness 0.15)) (justify mirror)))
-          (fp_text user "Place face down." (at 3.7 -0.55 -97) (layer B.SilkS) (effects (font (size 1.0 1.0) (thickness 0.15)) (justify mirror)))
-          (fp_text user "Solder jumpers on back." (at 3.7 -1.8 -97) (layer B.SilkS) (effects (font (size 1.0 1.0) (thickness 0.15)) (justify mirror)))
+          (fp_text user "Nice!Nano" (at 0 1 -97) (layer F.SilkS knockout) (effects (font (size 1.2 1.2) (thickness 0.30))))
+          (fp_text user "Place face down." (at 0 -1.6 -97) (layer F.SilkS) (effects (font (size 1.0 1.0) (thickness 0.15))))
         
           
           (pad 1 thru_hole circle (at -13.97 7.62 -97) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 35 "RAW"))
@@ -3193,12 +3189,8 @@
           (fp_text user col4 (at 13.97 -6.3 7) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
   
           
-          (fp_text user "Nice!Nano" (at 3.7 1.2 -83) (layer F.SilkS knockout) (effects (font (size 1.0 1.0) (thickness 0.15))))
-          (fp_text user "Place face down." (at 3.7 -0.55 -83) (layer F.SilkS) (effects (font (size 1.0 1.0) (thickness 0.15))))
-          (fp_text user "Solder jumpers on back." (at 3.7 -1.8 -83) (layer F.SilkS) (effects (font (size 1.0 1.0) (thickness 0.15))))
-          (fp_text user "Nice!Nano" (at 3.7 1.2 -83) (layer B.SilkS knockout) (effects (font (size 1.0 1.0) (thickness 0.15)) (justify mirror)))
-          (fp_text user "Place face down." (at 3.7 -0.55 -83) (layer B.SilkS) (effects (font (size 1.0 1.0) (thickness 0.15)) (justify mirror)))
-          (fp_text user "Solder jumpers on back." (at 3.7 -1.8 -83) (layer B.SilkS) (effects (font (size 1.0 1.0) (thickness 0.15)) (justify mirror)))
+          (fp_text user "Nice!Nano" (at 0 1 -83) (layer F.SilkS knockout) (effects (font (size 1.2 1.2) (thickness 0.30))))
+          (fp_text user "Place face down." (at 0 -1.6 -83) (layer F.SilkS) (effects (font (size 1.0 1.0) (thickness 0.15))))
         
           
           (pad 1 thru_hole circle (at -13.97 7.62 -83) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 35 "RAW"))
