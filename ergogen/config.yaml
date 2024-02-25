@@ -282,8 +282,8 @@ pcbs:
           shift: [key_width + mcu_padding_width, 15.5]
         params:
           side: B
-          reverse: true
-          from: switch_from
+          reverse: false
+          from: POSITIVE
           to: RAW
 
       power-switch-right: # todo sort to and from
@@ -294,8 +294,8 @@ pcbs:
           shift: [key_width + mcu_padding_width, 15.5]
         params:
           side: B
-          reverse: true
-          from: switch_from
+          reverse: false
+          from: POSITIVE
           to: RAW
 
       nice-view-left:

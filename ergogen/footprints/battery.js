@@ -1,8 +1,8 @@
 module.exports = {
     params: {
         designator: 'Battery',
-        RAW: { type: 'net', value: 'RAW' },
-        GND: { type: 'net', value: 'GND' },
+        POSITIVE: { type: 'net', value: 'POSITIVE' },
+        NEGATIVE: { type: 'net', value: 'GND' },
     },
     body: p => `
         (module lib:niceview_headers (layer F.Cu) (tedit 648E0265)
@@ -17,8 +17,8 @@ module.exports = {
 
 
         ${''/* pins */}
-        (pad 1 thru_hole rect (at 0 7.75 ${p.rot}) (size 1.4 1.4) (drill 0.8) (layers *.Cu *.SilkS *.Mask) ${p.RAW.str})
-        (pad 2 thru_hole circle (at 0 -7.75 ${p.rot}) (size 1.4 1.4) (drill 0.8) (layers *.Cu *.SilkS *.Mask) ${p.GND.str})
+        (pad 1 thru_hole rect (at 0 7.75 ${p.rot}) (size 1.4 1.4) (drill 0.8) (layers *.Cu *.SilkS *.Mask) ${p.POSITIVE.str})
+        (pad 2 thru_hole circle (at 0 -7.75 ${p.rot}) (size 1.4 1.4) (drill 0.8) (layers *.Cu *.SilkS *.Mask) ${p.NEGATIVE.str})
         )
         `
 
