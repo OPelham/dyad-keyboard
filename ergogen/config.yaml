@@ -60,8 +60,8 @@ points:
         ref: finger-zone_inner_bottom # ref to a key zone_column_row
         shift: [0 - 6, -1 * key_height - 5]
       key:
-        padding: 1key_height  # vertical spacing between keys
-        spread: 1key_width   # horizontal spacing between keys
+        padding: key_height  # vertical spacing between keys
+        spread: key_width   # horizontal spacing between keys
       columns:
         inner:
           key:
@@ -69,7 +69,7 @@ points:
         outer:
           key:
             splay: -12
-            shift: [4,-2]
+            shift: [4, -2]
 
 outlines:
   raw:
@@ -174,7 +174,7 @@ outlines:
       name: keys
 
 pcbs:
-  Dyad-V1:
+  dyad-choc-v1:
     outlines:
       main:
         outline: board
