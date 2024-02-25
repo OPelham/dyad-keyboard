@@ -3085,7 +3085,7 @@
           (fp_text user col4 (at 13.97 -6.3 -7) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
   
           
-          (fp_text user "Nice!Nano" (at 0 1 -97) (layer F.SilkS knockout) (effects (font (size 1.2 1.2) (thickness 0.30))))
+          (fp_text user "Nice!Nano" (at 0 1 -97) (layer F.SilkS knockout) (effects (font (size 1.2 1.2) (thickness 0.20))))
           (fp_text user "Place face down." (at 0 -1.6 -97) (layer F.SilkS) (effects (font (size 1.0 1.0) (thickness 0.15))))
         
           
@@ -3189,7 +3189,7 @@
           (fp_text user col4 (at 13.97 -6.3 7) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
   
           
-          (fp_text user "Nice!Nano" (at 0 1 -83) (layer F.SilkS knockout) (effects (font (size 1.2 1.2) (thickness 0.30))))
+          (fp_text user "Nice!Nano" (at 0 1 -83) (layer F.SilkS knockout) (effects (font (size 1.2 1.2) (thickness 0.20))))
           (fp_text user "Place face down." (at 0 -1.6 -83) (layer F.SilkS) (effects (font (size 1.0 1.0) (thickness 0.15))))
         
           
@@ -3297,6 +3297,9 @@
                 (pad 1 smd rect (at 2.25 2.075 -7) (size 0.9 1.25) (layers F.Cu F.Paste F.Mask) (net 57 "switch_from"))
                 (pad 2 smd rect (at -0.75 2.075 -7) (size 0.9 1.25) (layers F.Cu F.Paste F.Mask) (net 35 "RAW"))
                 (pad 3 smd rect (at -2.25 2.075 -7) (size 0.9 1.25) (layers F.Cu F.Paste F.Mask))
+
+                
+                (fp_text user "Power" (at 0 3.6 -7) (layer F.SilkS knockout) (effects (font (size 0.8 0.8) (thickness 0.15))))
             
                  
                 
@@ -3317,6 +3320,9 @@
                 (pad 1 smd rect (at -2.25 2.075 -7) (size 0.9 1.25) (layers B.Cu B.Paste B.Mask) (net 57 "switch_from"))
                 (pad 2 smd rect (at 0.75 2.075 -7) (size 0.9 1.25) (layers B.Cu B.Paste B.Mask) (net 35 "RAW"))
                 (pad 3 smd rect (at 2.25 2.075 -7) (size 0.9 1.25) (layers B.Cu B.Paste B.Mask))
+
+                
+                (fp_text user "Power" (at 0 3.6 -7) (layer F.SilkS knockout) (effects (font (size 0.8 0.8) (thickness 0.15))))
             
                 )
 
@@ -3358,6 +3364,9 @@
                 (pad 1 smd rect (at 2.25 2.075 7) (size 0.9 1.25) (layers F.Cu F.Paste F.Mask) (net 57 "switch_from"))
                 (pad 2 smd rect (at -0.75 2.075 7) (size 0.9 1.25) (layers F.Cu F.Paste F.Mask) (net 35 "RAW"))
                 (pad 3 smd rect (at -2.25 2.075 7) (size 0.9 1.25) (layers F.Cu F.Paste F.Mask))
+
+                
+                (fp_text user "Power" (at 0 3.6 7) (layer F.SilkS knockout) (effects (font (size 0.8 0.8) (thickness 0.15))))
             
                  
                 
@@ -3378,6 +3387,9 @@
                 (pad 1 smd rect (at -2.25 2.075 7) (size 0.9 1.25) (layers B.Cu B.Paste B.Mask) (net 57 "switch_from"))
                 (pad 2 smd rect (at 0.75 2.075 7) (size 0.9 1.25) (layers B.Cu B.Paste B.Mask) (net 35 "RAW"))
                 (pad 3 smd rect (at 2.25 2.075 7) (size 0.9 1.25) (layers B.Cu B.Paste B.Mask))
+
+                
+                (fp_text user "Power" (at 0 3.6 7) (layer F.SilkS knockout) (effects (font (size 0.8 0.8) (thickness 0.15))))
             
                 )
 
@@ -3471,6 +3483,9 @@
         (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS") (tstamp f1aa01b3-2926-4391-8681-066d00797866))
       (pad "1" thru_hole circle (at -3.2 0 173) (size 2 2) (drill 1) (layers "*.Cu" "*.Mask") (net 36 "GND") (tstamp c1bfc80a-da2c-40fa-b2de-c754a235f452))
       (pad "2" thru_hole circle (at 3.2 0 173) (size 2 2) (drill 1) (layers "*.Cu" "*.Mask") (net 37 "RST") (tstamp 388645c9-48fa-49fb-97f9-62f7e1fd96ec))
+
+      
+      (fp_text user "Reset" (at 0 -3 173) (layer F.SilkS knockout) (effects (font (size 0.8 0.8) (thickness 0.15))))
     )
 
     
@@ -3483,6 +3498,9 @@
         (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS") (tstamp f1aa01b3-2926-4391-8681-066d00797866))
       (pad "1" thru_hole circle (at -3.2 0 -173) (size 2 2) (drill 1) (layers "*.Cu" "*.Mask") (net 36 "GND") (tstamp c1bfc80a-da2c-40fa-b2de-c754a235f452))
       (pad "2" thru_hole circle (at 3.2 0 -173) (size 2 2) (drill 1) (layers "*.Cu" "*.Mask") (net 37 "RST") (tstamp 388645c9-48fa-49fb-97f9-62f7e1fd96ec))
+
+      
+      (fp_text user "Reset" (at 0 -3 -173) (layer F.SilkS knockout) (effects (font (size 0.8 0.8) (thickness 0.15))))
     )
 
     

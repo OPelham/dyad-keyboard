@@ -48,6 +48,9 @@ module.exports = {
                 (pad 1 smd rect (at ${right}2.25 2.075 ${p.rot}) (size 0.9 1.25) (layers ${side}.Cu ${side}.Paste ${side}.Mask) ${p.from.str})
                 (pad 2 smd rect (at ${left}0.75 2.075 ${p.rot}) (size 0.9 1.25) (layers ${side}.Cu ${side}.Paste ${side}.Mask) ${p.to.str})
                 (pad 3 smd rect (at ${left}2.25 2.075 ${p.rot}) (size 0.9 1.25) (layers ${side}.Cu ${side}.Paste ${side}.Mask))
+
+                ${'' /* description */}
+                (fp_text user "Power" (at 0 3.6 ${p.rot}) (layer F.SilkS knockout) (effects (font (size 0.8 0.8) (thickness 0.15))))
             `
         }
 

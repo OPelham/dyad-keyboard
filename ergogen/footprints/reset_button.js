@@ -13,6 +13,9 @@ module.exports = {
         (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS") (tstamp f1aa01b3-2926-4391-8681-066d00797866))
       (pad "1" thru_hole circle (at -3.2 0 ${p.rot}) (size 2 2) (drill 1) (layers "*.Cu" "*.Mask") ${p.from.str} (tstamp c1bfc80a-da2c-40fa-b2de-c754a235f452))
       (pad "2" thru_hole circle (at 3.2 0 ${p.rot}) (size 2 2) (drill 1) (layers "*.Cu" "*.Mask") ${p.to.str} (tstamp 388645c9-48fa-49fb-97f9-62f7e1fd96ec))
+
+      ${'' /* description */}
+      (fp_text user "Reset" (at 0 -3 ${p.rot}) (layer F.SilkS knockout) (effects (font (size 0.8 0.8) (thickness 0.15))))
     )
 
     `
