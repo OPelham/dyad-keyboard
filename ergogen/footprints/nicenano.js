@@ -20,12 +20,12 @@ module.exports = {
       P14: { type: 'net', value: 'P14' },
       P16: { type: 'net', value: 'P16' },
       P10: { type: 'net', value: 'P10' },
-      P1: { type: 'net', value: 'P1' },
+      CS: { type: 'net', value: 'CS' },
       P0: { type: 'net', value: 'P0' },
       GND2: { type: 'net', value: 'GND' },
       GND3: { type: 'net', value: 'GND' },
-      P2: { type: 'net', value: 'P2' },
-      P3: { type: 'net', value: 'P3' },
+      MOSI: { type: 'net', value: 'MOSI' },
+      SCK: { type: 'net', value: 'SCK' },
       P4: { type: 'net', value: 'P4' },
       P5: { type: 'net', value: 'P5' },
       P6: { type: 'net', value: 'P6' },
@@ -59,52 +59,48 @@ module.exports = {
         return `
           ${''/* pin names */}
           (fp_text user RAW (at -13.97 ${def_pos}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left)))
+          (fp_text user GND (at -11.43 ${def_pos}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left)))
           (fp_text user RST (at -8.89 ${def_pos}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left)))
           (fp_text user VCC (at -6.35 ${def_pos}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left)))
-          (fp_text user ENCA (at -3.81 ${def_pos}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left)))
-          (fp_text user ENCB (at -1.27 ${def_pos}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left)))
-          (fp_text user row0 (at 1.27 ${def_pos}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left)))
-          (fp_text user row1 (at 3.81 ${def_pos}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left)))
-          (fp_text user row2 (at 6.35 ${def_pos}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left)))
-          (fp_text user row3 (at 8.89 ${def_pos}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left)))
-          (fp_text user row4 (at 11.43 ${def_pos}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left)))
-          (fp_text user row5 (at 13.97 ${def_pos}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left)))
+          (fp_text user COL0 (at 3.81 ${def_pos}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left)))
+          (fp_text user COL0 (at 6.35 ${def_pos}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left)))
+          (fp_text user COL1 (at 8.89 ${def_pos}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left)))
+          (fp_text user COL2 (at 11.43 ${def_pos}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left)))
+          (fp_text user COL3 (at 13.97 ${def_pos}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left)))
         
+          (fp_text user CS (at -13.97 ${def_neg}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right)))
           (fp_text user GND (at -8.89 ${def_neg}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right)))
-          (fp_text user SDA (at -3.81 ${def_neg}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right)))
-          (fp_text user SCL (at -1.27 ${def_neg}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right)))
-          (fp_text user CS (at 1.27 ${def_neg}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right)))
-          (fp_text user col0 (at 3.81 ${def_neg}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right)))
-          (fp_text user col1 (at 6.35 ${def_neg}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right)))
-          (fp_text user col2 (at 8.89 ${def_neg}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right)))
-          (fp_text user col3 (at 11.43 ${def_neg}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right)))
-          (fp_text user col4 (at 13.97 ${def_neg}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right)))
-  
-          (fp_text user GND (at -8.89 ${def_pos}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
-          (fp_text user ENCA (at -3.81 ${def_pos}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
-          (fp_text user ENCB (at -1.27 ${def_pos}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
-          (fp_text user row0 (at 1.27 ${def_pos}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
-          (fp_text user row1 (at 3.81 ${def_pos}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
-          (fp_text user row2 (at 6.35 ${def_pos}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
-          (fp_text user row3 (at 8.89 ${def_pos}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
-          (fp_text user row4 (at 11.43 ${def_pos}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
-          (fp_text user row5 (at 13.97 ${def_pos}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
+          (fp_text user GND (at -6.35 ${def_neg}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right)))
+          (fp_text user MOSI (at -3.81 ${def_neg}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right)))
+          (fp_text user SCK (at -1.27 ${def_neg}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right)))
+          (fp_text user ROW0 (at 6.35 ${def_neg}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right)))
+          (fp_text user ROW1 (at 8.89 ${def_neg}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right)))
+          (fp_text user ROW2 (at 11.43 ${def_neg}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right)))
+          (fp_text user ROW3 (at 13.97 ${def_neg}6.3 ${p.rot + 90}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right)))
+
+          (fp_text user RAW (at -13.97 ${def_pos}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
+          (fp_text user GND (at -11.43 ${def_pos}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
+          (fp_text user RST (at -8.89 ${def_pos}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
+          (fp_text user VCC (at -6.35 ${def_pos}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
+          (fp_text user COL0 (at 3.81 ${def_pos}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
+          (fp_text user COL0 (at 6.35 ${def_pos}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
+          (fp_text user COL1 (at 8.89 ${def_pos}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
+          (fp_text user COL2 (at 11.43 ${def_pos}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
+          (fp_text user COL3 (at 13.97 ${def_pos}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
        
-          (fp_text user RAW (at -13.97 ${def_neg}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
-          (fp_text user RST (at -8.89 ${def_neg}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
-          (fp_text user VCC (at -6.35 ${def_neg}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
-          (fp_text user SDA  (at -3.81 ${def_neg}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
-          (fp_text user SCL (at -1.27 ${def_neg}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
-          (fp_text user CS (at 1.27 ${def_neg}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
-          (fp_text user col0 (at 3.81 ${def_neg}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
-          (fp_text user col1 (at 6.35 ${def_neg}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
-          (fp_text user col2 (at 8.89 ${def_neg}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
-          (fp_text user col3 (at 11.43 ${def_neg}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
-          (fp_text user col4 (at 13.97 ${def_neg}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
+          (fp_text user CS (at -13.97 ${def_neg}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
+          (fp_text user GND (at -8.89 ${def_neg}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
+          (fp_text user GND (at -6.35 ${def_neg}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
+          (fp_text user MOSI (at -3.81 ${def_neg}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
+          (fp_text user SCK (at -1.27 ${def_neg}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
+          (fp_text user ROW0 (at 6.35 ${def_neg}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
+          (fp_text user ROW1 (at 8.89 ${def_neg}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
+          (fp_text user ROW2 (at 11.43 ${def_neg}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
+          (fp_text user ROW3 (at 13.97 ${def_neg}6.3 ${p.rot + 90}) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
   
           ${'' /* description */}
           (fp_text user "Nice!Nano" (at 0 ${def_pos}1 ${p.rot}) (layer F.SilkS knockout) (effects (font (size 1.2 1.2) (thickness 0.20))))
-          (fp_text user "Place face down." (at 0 ${def_pos}-1.6 ${p.rot}) (layer F.SilkS) (effects (font (size 1.0 1.0) (thickness 0.15))))
+          (fp_text user "Place face down" (at 0 ${def_pos}-1.6 ${p.rot}) (layer F.SilkS) (effects (font (size 1.0 1.0) (thickness 0.15))))
         
           ${''/* and now the actual pins */}
           (pad 1 thru_hole circle (at -13.97 ${def_pos}7.62 ${p.rot}) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.RAW.str})
@@ -120,12 +116,12 @@ module.exports = {
           (pad 11 thru_hole circle (at 11.43 ${def_pos}7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.P16.str})
           (pad 12 thru_hole circle (at 13.97 ${def_pos}7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.P10.str})
           
-          (pad 13 thru_hole circle (at -13.97 ${def_neg}7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.P1.str})
+          (pad 13 thru_hole circle (at -13.97 ${def_neg}7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.CS.str})
           (pad 14 thru_hole circle (at -11.43 ${def_neg}7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.P0.str})
           (pad 15 thru_hole circle (at -8.89 ${def_neg}7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.GND2.str})
           (pad 16 thru_hole circle (at -6.35 ${def_neg}7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.GND3.str})
-          (pad 17 thru_hole circle (at -3.81 ${def_neg}7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.P2.str})
-          (pad 18 thru_hole circle (at -1.27 ${def_neg}7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.P3.str})
+          (pad 17 thru_hole circle (at -3.81 ${def_neg}7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.MOSI.str})
+          (pad 18 thru_hole circle (at -1.27 ${def_neg}7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.SCK.str})
           (pad 19 thru_hole circle (at 1.27 ${def_neg}7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.P4.str})
           (pad 20 thru_hole circle (at 3.81 ${def_neg}7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.P5.str})
           (pad 21 thru_hole circle (at 6.35 ${def_neg}7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.P6.str})
@@ -135,7 +131,7 @@ module.exports = {
   
           ${''/* rect around RAW */}
           (pad "" thru_hole rect (at -13.97 7.62 ${p.rot}) (size 1.7526 1.7526) (drill 1.1) (layers F.Cu F.Mask) (zone_connect 0) ${p.RAW.str})
-          (pad "" thru_hole rect (at -13.97 -7.62 ${p.rot}) (size 1.7526 1.7526) (drill 1.1) (layers B.Cu B.Mask) (zone_connect 0) ${p.P1.str})
+          (pad "" thru_hole rect (at -13.97 -7.62 ${p.rot}) (size 1.7526 1.7526) (drill 1.1) (layers B.Cu B.Mask) (zone_connect 0) ${p.CS.str})
         `
       }
       if (p.orientation == 'down') {

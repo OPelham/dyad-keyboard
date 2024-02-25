@@ -5,9 +5,9 @@ module.exports = {
         outline: false,
         VCC: { type: 'net', value: 'VCC' },
         GND: { type: 'net', value: 'GND' },
-        SDA: undefined,
-        SCL: undefined,
-        CS: undefined,
+        MOSI: { type: 'net', value: 'MOSI' },
+        SCK: { type: 'net', value: 'SCK' },
+        CS: { type: 'net', value: 'CS' },
     },
     body: p => {
         const standard = `
@@ -20,9 +20,9 @@ module.exports = {
 
             ${'' /* pins */}
             (pad 4 thru_hole oval (at 0.0 -5.08 ${p.rot + 270}) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
-            ${p.SDA.str})
+            ${p.MOSI.str})
             (pad 3 thru_hole oval (at 0.0 -2.54 ${p.rot + 270}) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
-            ${p.SCL.str})
+            ${p.SCK.str})
             (pad 2 thru_hole oval (at 0.0  0.00 ${p.rot + 270}) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
             ${p.VCC.str})
             (pad 1 thru_hole oval (at 0.0  2.54 ${p.rot + 270}) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
@@ -46,9 +46,12 @@ module.exports = {
               (fp_line (start 1.25 -6.5) (end -1.25 -6.5) (layer F.SilkS) (width 0.15))
 
               ${'' /* labels */}
-              (fp_text user Nice!View (at -2.5 0.00 ${p.rot+90}) (layer F.SilkS knockout) (effects (font (size 1.0 1.0) (thickness 0.15))))
-              (fp_text user Nice!View (at -2.5 0.00 ${p.rot+90}) (layer B.SilkS knockout) (effects (font (size 1.0 1.0) (thickness 0.15)) (justify mirror)))
-
+              (fp_text user Nice!View (at 2.5 3.5 ${p.rot+90}) (layer F.SilkS knockout) (effects (font (size 1.0 1.0) (thickness 0.15)) (justify right)))
+              (fp_text user MOSI (at -2 -5.08 ${p.rot}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.10)) (justify right)))
+              (fp_text user SCK (at -2 -2.54 ${p.rot}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.10)) (justify right)))
+              (fp_text user VCC (at -2 -0 ${p.rot}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.10)) (justify right)))
+              (fp_text user GND (at -2 2.54 ${p.rot}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.10)) (justify right)))
+              (fp_text user CS (at -2 5.08 ${p.rot}) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.10)) (justify right)))
               `
         }
         if (p.outline) {

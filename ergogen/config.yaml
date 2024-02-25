@@ -22,7 +22,7 @@ units:
 
 points:
   mirror: &mirror
-    ref: finger-zone_pinkey_height_top
+    ref: finger-zone_pinky_top
     distance: -1.2 * outline_width
 
   zones:
@@ -34,25 +34,34 @@ points:
         padding: key_height  # vertical spacing between keys
         spread: key_width   # horizontal spacing between keys
       columns:
-        pinkey_height:
+        pinky:
+          key:
+            column_net: P18
         ring:
           key:
             stagger: 14
             splay: -7
             spread: 20
+            column_net: P15
         middle:
           key:
             stagger: 8
+            column_net: P14
         index:
           key:
             stagger: -10
+            column_net: P16
         inner:
           key:
             stagger: -3
+            column_net: P10
       rows:
         bottom:
+          row_net: P8
         home:
+          row_net: P7
         top:
+          row_net: P6
 
     # Thumb cluster
     thumb-zone:
@@ -66,10 +75,16 @@ points:
         inner:
           key:
             splay: -15
+            column_net: P16
         outer:
           key:
             splay: -12
             shift: [4, -2]
+            column_net: P10
+      rows:
+        sole:
+          row_net: P9
+
 
 outlines:
   raw:
@@ -88,10 +103,10 @@ outlines:
       operation: stack
       fillet: 2
       points:
-        - ref: finger-zone_pinkey_height_top
+        - ref: finger-zone_pinky_top
           shift: [-0.5 * outline_width, 0.5 * outline_height]
 
-        - ref: finger-zone_pinkey_height_top
+        - ref: finger-zone_pinky_top
           shift: [0.5 * outline_width + key_width, 0.5 * outline_height]
         
         - ref: finger-zone_inner_home
@@ -102,19 +117,19 @@ outlines:
         - ref: finger-zone_inner_bottom
           shift: [0.5 * key_width + mcu_padding_width + 0.5 * (outline_width - key_width) + mcu_width, -0.5 * key_height]
 
-        - ref: thumb-zone_outer
+        - ref: thumb-zone_outer_sole
           shift: [0.5 * outline_width, 0.5 * outline_height]
-        - ref: thumb-zone_outer
+        - ref: thumb-zone_outer_sole
           shift: [0.5 * outline_width, -0.5 * outline_height]
-        - ref: thumb-zone_outer
+        - ref: thumb-zone_outer_sole
           shift: [-0.5 * outline_width, -0.5 * outline_height]
 
-        - ref: thumb-zone_inner
+        - ref: thumb-zone_inner_sole
           shift: [-.5 * outline_width, -0.5 * outline_height]
 
-        - ref: finger-zone_pinkey_height_bottom
+        - ref: finger-zone_pinky_bottom
           shift: [0.5 * outline_width, -0.5 * outline_height]
-        - ref: finger-zone_pinkey_height_bottom
+        - ref: finger-zone_pinky_bottom
           shift: [-0.5 * outline_width, -0.5 * outline_height]
   
   fill-right:
@@ -122,10 +137,10 @@ outlines:
       operation: stack
       fillet: 2
       points:
-        - ref: mirror_finger-zone_pinkey_height_top
+        - ref: mirror_finger-zone_pinky_top
           shift: [-0.5 * outline_width, 0.5 * outline_height]
 
-        - ref: mirror_finger-zone_pinkey_height_top
+        - ref: mirror_finger-zone_pinky_top
           shift: [0.5 * outline_width + key_width, 0.5 * outline_height]
         
         - ref: mirror_finger-zone_inner_home
@@ -136,19 +151,19 @@ outlines:
         - ref: mirror_finger-zone_inner_bottom
           shift: [0.5 * key_width + mcu_padding_width + 0.5 * (outline_width - key_width) + mcu_width, -0.5 * key_height]
 
-        - ref: mirror_thumb-zone_outer
+        - ref: mirror_thumb-zone_outer_sole
           shift: [0.5 * outline_width, 0.5 * outline_height]
-        - ref: mirror_thumb-zone_outer
+        - ref: mirror_thumb-zone_outer_sole
           shift: [0.5 * outline_width, -0.5 * outline_height]
-        - ref: mirror_thumb-zone_outer
+        - ref: mirror_thumb-zone_outer_sole
           shift: [-0.5 * outline_width, -0.5 * outline_height]
 
-        - ref: mirror_thumb-zone_inner
+        - ref: mirror_thumb-zone_inner_sole
           shift: [-.5 * outline_width, -0.5 * outline_height]
 
-        - ref: mirror_finger-zone_pinkey_height_bottom
+        - ref: mirror_finger-zone_pinky_bottom
           shift: [0.5 * outline_width, -0.5 * outline_height]
-        - ref: mirror_finger-zone_pinkey_height_bottom
+        - ref: mirror_finger-zone_pinky_bottom
           shift: [-0.5 * outline_width, -0.5 * outline_height]
 
   fill:
@@ -203,10 +218,35 @@ pcbs:
         what: nicenano
         params:
           orientation: "down"
+          RAW: RAW
+          GND1: GND
+          RST: RST
+          VCC: VCC
+          P21: P21
+          P20: P20
+          P19: P19
+          P18: P18
+          P15: P15
+          P14: P14
+          P16: P16
+          P10: P10
+          CS: CS
+          P0: P0
+          GND2: GND
+          GND3: GND
+          MOSI: MOSI
+          SCK: SCK
+          P4: P4
+          P5: P5
+          P6: P6
+          P7: P7
+          P8: P8
+          P9: P9
         where:
           ref: finger-zone_inner_home
           shift: [key_width + mcu_padding_width, -1]
           rotate: -90
+
 
       mcu-right:
         what: nicenano
@@ -217,15 +257,16 @@ pcbs:
           shift: [key_width + mcu_padding_width, -1]
           rotate: 90
 
-      battery-left:
+      battery-left: # todo sort to and from
         what: battery
         where:
           ref:
             - finger-zone_inner_home
           shift: [key_width + mcu_padding_width, 15.5]
           rotate: 90
+        
 
-      battery-right:
+      battery-right: # todo sort to and from
         what: battery
         where:
           ref:
@@ -233,26 +274,26 @@ pcbs:
           shift: [key_width + mcu_padding_width, 15.5]
           rotate: 90
 
-      power-switch-left:
+      power-switch-left: # todo sort to and from
         what: slider_reversible
         where:
           ref:
             - finger-zone_inner_home
           shift: [key_width + mcu_padding_width, 15.5]
         params:
-          side: F
+          side: B
           reverse: true
           from: switch_from
           to: RAW
 
-      power-switch-right:
+      power-switch-right: # todo sort to and from
         what: slider_reversible
         where:
           ref:
             - mirror_finger-zone_inner_home
           shift: [key_width + mcu_padding_width, 15.5]
         params:
-          side: F
+          side: B
           reverse: true
           from: switch_from
           to: RAW
@@ -268,11 +309,11 @@ pcbs:
         params:
           outline: true
           side: 'F'
-          SDA: NN_SDA_CS
-          SCL: NN_SCL_GND
-          VCC: NN_VCC
-          GND: NN_GND_SCL
-          CS: NN_CS_SDA
+          MOSI: MOSI
+          SCK: SCK
+          VCC: VCC
+          GND: GND
+          CS: CS
       
       nice-view-right:
         what: niceview
@@ -285,11 +326,11 @@ pcbs:
         params:
           outline: true
           side: 'F'
-          SDA: NN_SDA_CS
-          SCL: NN_SCL_GND
-          VCC: NN_VCC
-          GND: NN_GND_SCL
-          CS: NN_CS_SDA
+          MOSI: MOSI
+          SCK: SCK
+          VCC: VCC
+          GND: GND
+          CS: CS
 
       reset-left: # todo change
         what: reset_button
