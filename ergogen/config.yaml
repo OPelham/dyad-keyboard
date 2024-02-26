@@ -13,8 +13,8 @@ units:
   mcu_padding_height:  2.5
 
   # Board Outline Padding
-  outline_width: key_width + 5
-  outline_height: key_height + 5
+  outline_width: key_width + 2
+  outline_height: key_height + 2
 
   # web-ui overrides to better see overlaping choc keys
   $default_width: 18 - 0.5
@@ -272,7 +272,7 @@ pcbs:
           ref:
             - mirror_finger-zone_inner_home
           shift: [key_width + mcu_padding_width, 15.5]
-          rotate: 90
+          rotate: -90
 
       power-switch-left: # todo sort to and from
         what: slider_reversible
@@ -283,8 +283,8 @@ pcbs:
         params:
           side: B
           reverse: false
-          from: POSITIVE
-          to: RAW
+          from: RAW
+          to: POSITIVE
 
       power-switch-right: # todo sort to and from
         what: slider_reversible
@@ -295,8 +295,8 @@ pcbs:
         params:
           side: B
           reverse: false
-          from: POSITIVE
-          to: RAW
+          from: RAW
+          to: POSTIVE
 
       nice-view-left:
         what: niceview
@@ -332,22 +332,49 @@ pcbs:
           GND: GND
           CS: CS
 
-      reset-left: # todo change
-        what: reset_button
+      # reset-left: # todo change
+      #   what: b3u1000p
+      #   where:
+      #     - ref: finger-zone_inner_home
+      #       shift: [key_width + mcu_padding_width, -30.5]
+      #       rotate: 180
+      #   nets:
+      #     r1: RST
+      #     r2: GND
+      #   params:
+      #     reverse: true
+          
+
+      # reset-right: # todo change
+      #   what: b3u1000p
+      #   where:
+      #     - ref: mirror_finger-zone_inner_home
+      #       shift: [key_width + mcu_padding_width, -30.5]
+      #       rotate: 180
+      #   nets:
+      #     r1: RST
+      #     r2: GND
+      #   params:
+      #     reverse: true
+      
+      reset-left:
+        what: b3u1000p
         where:
           - ref: finger-zone_inner_home
             shift: [key_width + mcu_padding_width, -30.5]
             rotate: 180
         params:
-          from: GND
-          to: RST
+          r1: RST
+          r2: GND
+          reverse: false
 
-      reset-right: # todo change
-        what: reset_button
+      reset-right:
+        what: b3u1000p
         where:
           - ref: mirror_finger-zone_inner_home
             shift: [key_width + mcu_padding_width, -30.5]
-            rotate: 180
+            rotate: -180
         params:
-          from: GND
-          to: RST
+          r1: RST
+          r2: GND
+          reverse: false
