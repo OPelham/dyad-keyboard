@@ -51,6 +51,7 @@ module.exports = {
 
                 ${'' /* description */}
                 (fp_text user "Power" (at 0 3.6 ${p.rot}) (layer F.SilkS knockout) (effects (font (size 0.8 0.8) (thickness 0.15))))
+                (fp_text user "Power" (at 2 3.6 ${p.rot}) (layer B.SilkS knockout) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
             `
         }
 

@@ -35,7 +35,8 @@ module.exports = {
 
 	  )
       (fp_text user "Reset" (at 0 -3 ${p.rot}) (layer F.SilkS knockout) (effects (font (size 0.8 0.8) (thickness 0.15))))
-	  (fp_text user "Reset" (at 0 -3 ${p.rot}) (layer B.SilkS knockout) (effects (font (size 0.8 0.8) (thickness 0.15))))
+	  (fp_text user "Reset" (at 1.65 -3 ${p.rot}) (layer B.SilkS knockout) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
+
 
 	      `
 	    function pins(def_neg, def_pos, def_side) {

@@ -5,6 +5,7 @@ units:
   key_width: cx
   key_height: cy
 
+  # MCU dimensions
   mcu_width: 18
   mcu_height: 33
 
