@@ -150,7 +150,7 @@ outlines:
       name: keys
 
 pcbs:
-  dyad-choc-v1:
+  socius-choc-v1:
     outlines:
       main:
         outline: board
