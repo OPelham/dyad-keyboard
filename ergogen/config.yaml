@@ -12,6 +12,9 @@ units:
   mcu_padding_width:  2.5
   mcu_padding_height:  2.5
 
+  # starting height of MCU reletive to home row
+  mcu_position_height: -5
+
   # Board Outline Padding
   outline_width: key_width + 2
   outline_height: key_height + 2
@@ -21,13 +24,15 @@ units:
   $default_height: 17 - 0.5
 
 points:
-  mirror: &mirror
-    ref: finger-zone_pinky_top
-    distance: -1.2 * outline_width
-
+  # mirror:
+  #   ref: finger-zone_pinky_top
+  #   distance: -1.2 * outline_width
   zones:
     # Finger rows
     finger-zone:
+      mirror:
+        ref: finger-zone_pinky_top
+        distance: -1.2 * outline_width
       anchor:
         shift: [230, -160] # fixing kicad placement
       key:
@@ -36,38 +41,41 @@ points:
       columns:
         pinky:
           key:
-            column_net: P18
+            column_net: COL0
         ring:
           key:
             stagger: 14
             splay: -7
             spread: 20
-            column_net: P15
+            column_net: COL1
         middle:
           key:
             stagger: 8
-            column_net: P14
+            column_net: COL2
         index:
           key:
             stagger: -10
-            column_net: P16
+            column_net: COL3
         inner:
           key:
             stagger: -3
-            column_net: P10
+            column_net: COL4
       rows:
         bottom:
-          row_net: P8
+          row_net: ROW2
         home:
-          row_net: P7
+          row_net: ROW1
         top:
-          row_net: P6
+          row_net: ROW0
 
     # Thumb cluster
     thumb-zone:
+      mirror:
+          ref: finger-zone_pinky_top
+          distance: -1.2 * outline_width
       anchor:
         ref: finger-zone_inner_bottom # ref to a key zone_column_row
-        shift: [0 - 6, -1 * key_height - 5]
+        shift: [0 - 6, -1 * key_height - 2.5]
       key:
         padding: key_height  # vertical spacing between keys
         spread: key_width   # horizontal spacing between keys
@@ -75,15 +83,15 @@ points:
         inner:
           key:
             splay: -15
-            column_net: P16
+            column_net: COL3
         outer:
           key:
             splay: -12
             shift: [4, -2]
-            column_net: P10
+            column_net: COL4
       rows:
         sole:
-          row_net: P9
+          row_net: ROW3
 
 
 outlines:
@@ -110,9 +118,9 @@ outlines:
           shift: [0.5 * outline_width + key_width, 0.5 * outline_height]
         
         - ref: finger-zone_inner_home
-          shift: [-0.5 * key_width + mcu_padding_width + 0.5 * (outline_width - key_width) + mcu_width, key_height]
+          shift: [-0.5 * key_width + mcu_padding_width + 0.5 * (outline_width - key_width) + mcu_width, mcu_position_height + key_height]
         - ref: finger-zone_inner_home
-          shift: [0.5 * key_width + mcu_padding_width + 0.5 * (outline_width - key_width) + mcu_width, key_height]
+          shift: [0.5 * key_width + mcu_padding_width + 0.5 * (outline_width - key_width) + mcu_width, mcu_position_height + key_height]
 
         - ref: finger-zone_inner_bottom
           shift: [0.5 * key_width + mcu_padding_width + 0.5 * (outline_width - key_width) + mcu_width, -0.5 * key_height]
@@ -144,9 +152,9 @@ outlines:
           shift: [0.5 * outline_width + key_width, 0.5 * outline_height]
         
         - ref: mirror_finger-zone_inner_home
-          shift: [-0.5 * key_width + mcu_padding_width + 0.5 * (outline_width - key_width) + mcu_width, key_height]
+          shift: [-0.5 * key_width + mcu_padding_width + 0.5 * (outline_width - key_width) + mcu_width, mcu_position_height + key_height]
         - ref: mirror_finger-zone_inner_home
-          shift: [0.5 * key_width + mcu_padding_width + 0.5 * (outline_width - key_width) + mcu_width, key_height]
+          shift: [0.5 * key_width + mcu_padding_width + 0.5 * (outline_width - key_width) + mcu_width, mcu_position_height + key_height]
 
         - ref: mirror_finger-zone_inner_bottom
           shift: [0.5 * key_width + mcu_padding_width + 0.5 * (outline_width - key_width) + mcu_width, -0.5 * key_height]
@@ -194,10 +202,10 @@ pcbs:
       main:
         outline: board
     footprints:
+
       choc_hotswap:
         what: choc
         where: true
-        asym: both
         params:
           keycaps: true
           reverse: false
@@ -206,45 +214,24 @@ pcbs:
           to: "{{colrow}}"
 
       diode:
-        what: diode
+        what: smd-diode
         where: true
+        asym: source
         params:
           from: "{{colrow}}"
           to: "{{row_net}}"
         adjust:
-          shift: [0, -5]
+          shift: [8.25, -1]
+          rotate: 90
+
 
       mcu-left:
         what: nicenano
         params:
           orientation: "down"
-          RAW: RAW
-          GND1: GND
-          RST: RST
-          VCC: VCC
-          P21: P21
-          P20: P20
-          P19: P19
-          P18: P18
-          P15: P15
-          P14: P14
-          P16: P16
-          P10: P10
-          CS: CS
-          P0: P0
-          GND2: GND
-          GND3: GND
-          MOSI: MOSI
-          SCK: SCK
-          P4: P4
-          P5: P5
-          P6: P6
-          P7: P7
-          P8: P8
-          P9: P9
         where:
           ref: finger-zone_inner_home
-          shift: [key_width + mcu_padding_width, -1]
+          shift: [key_width + mcu_padding_width, mcu_position_height -1]
           rotate: -90
 
 
@@ -254,7 +241,7 @@ pcbs:
           orientation: "down"
         where:
           ref: mirror_finger-zone_inner_home
-          shift: [key_width + mcu_padding_width, -1]
+          shift: [key_width + mcu_padding_width, mcu_position_height -1]
           rotate: 90
 
       battery-left: # todo sort to and from
@@ -262,8 +249,8 @@ pcbs:
         where:
           ref:
             - finger-zone_inner_home
-          shift: [key_width + mcu_padding_width, 15.5]
-          rotate: 90
+          shift: [key_width + mcu_padding_width, mcu_position_height + 15.5]
+          rotate: -90
         
 
       battery-right: # todo sort to and from
@@ -271,15 +258,15 @@ pcbs:
         where:
           ref:
             - mirror_finger-zone_inner_home
-          shift: [key_width + mcu_padding_width, 15.5]
-          rotate: -90
+          shift: [key_width + mcu_padding_width, mcu_position_height + 15.5]
+          rotate: 90
 
       power-switch-left: # todo sort to and from
         what: slider_reversible
         where:
           ref:
             - finger-zone_inner_home
-          shift: [key_width + mcu_padding_width, 15.5]
+          shift: [key_width + mcu_padding_width, mcu_position_height + 15.5]
         params:
           side: B
           reverse: false
@@ -291,19 +278,19 @@ pcbs:
         where:
           ref:
             - mirror_finger-zone_inner_home
-          shift: [key_width + mcu_padding_width, 15.5]
+          shift: [key_width + mcu_padding_width, mcu_position_height + 15.5]
         params:
           side: B
           reverse: false
           from: RAW
-          to: POSTIVE
+          to: POSITIVE
 
       nice-view-left:
         what: niceview
         where:
           ref:
             - finger-zone_inner_home
-          shift: [key_width + mcu_padding_width, -20.5]
+          shift: [key_width + mcu_padding_width, mcu_position_height -20.5]
         adjust:
           rotate: 90
         params:
@@ -320,7 +307,7 @@ pcbs:
         where:
           ref:
             - mirror_finger-zone_inner_home
-          shift: [key_width + mcu_padding_width, -20.5]
+          shift: [key_width + mcu_padding_width, mcu_position_height -20.5]
         adjust:
           rotate: -90
         params:
@@ -336,28 +323,408 @@ pcbs:
         what: b3u1000p
         where:
           - ref: finger-zone_inner_home
-            shift: [key_width + mcu_padding_width, -30.5]
+            shift: [key_width + mcu_padding_width, mcu_position_height -27]
             rotate: 180
         params:
-          r1: RST
-          r2: GND
+          r1: GND
+          r2: RST
           reverse: false
 
       reset-right:
         what: b3u1000p
         where:
           - ref: mirror_finger-zone_inner_home
-            shift: [key_width + mcu_padding_width, -30.5]
+            shift: [key_width + mcu_padding_width, mcu_position_height -27]
             rotate: -180
         params:
-          r1: RST
-          r2: GND
+          r1: GND
+          r2: RST
           reverse: false
 
-      via-gnd:
+      # MCU Left
+      via-gnd-1: 
         what: via
         where:
           ref: finger-zone_inner_home
-          shift: [key_width + mcu_padding_width, -50.5]
+          shift: [key_width + mcu_padding_width + 5.8, mcu_position_height + 9.2]
+        params:
+          net: GND
+
+      via-gnd-2:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 2.6, mcu_position_height + 9.2]
+        params:
+          net: GND
+
+      via-row0-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 4.3, mcu_position_height + 11.52]
+        params:
+          net: ROW0
+
+      via-row0-2:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 4.3, mcu_position_height - 7.3]
+        params:
+          net: ROW0
+
+      via-cs-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 5, mcu_position_height + 13]
+        params:
+          net: CS
+
+      via-mosi-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 5.1, mcu_position_height + 2.8]
+        params:
+          net: MOSI
+
+      via-sck-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 2.6, mcu_position_height + 0.3]
+        params:
+          net: SCK
+
+      via-raw-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 3.3, mcu_position_height + 13]
         params:
           net: RAW
+
+      via-positive-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 0.3, mcu_position_height + 13]
+        params:
+          net: POSITIVE
+
+      via-vcc-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width, mcu_position_height + 5.3]
+        params:
+          net: VCC
+
+      via-row1-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 5.8, mcu_position_height + 1.6]
+        params:
+          net: ROW1
+
+      # Lower Section Left
+      via_reset-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 6.4, mcu_position_height - 27]
+        params:
+          net: RST
+
+      via_col4_1:
+        what: via
+        where:
+          ref: thumb-zone_outer_sole
+          shift: [-5.8 , 5.7]
+        params:
+          net: COL4
+
+      via_col4_2:
+        what: via
+        where:
+          ref: finger-zone_inner_bottom
+          shift: [-3.25 , 3.6]
+        params:
+          net: COL4
+
+      # via_col3_1:
+      #   what: via
+      #   where:
+      #     ref: thumb-zone_inner_sole
+      #     shift: [-5.8 , 5.7]
+      #   params:
+      #     net: COL3
+
+      via_col3_2:
+        what: via
+        where:
+          ref: finger-zone_index_bottom
+          shift: [-3.25 , 3.6]
+        params:
+          net: COL3
+
+      via_col0_1:
+        what: via
+        where:
+          ref: finger-zone_pinky_bottom
+          shift: [-3.25 , 8.2]
+        params:
+          net: COL0
+
+      via_col1_1:
+        what: via
+        where:
+          ref: finger-zone_ring_bottom
+          shift: [-3.25 , 8.2]
+        params:
+          net: COL1
+
+      via_col2_1:
+        what: via
+        where:
+          ref: finger-zone_middle_bottom
+          shift: [-3.25 , 8.2]
+        params:
+          net: COL2
+
+      via_col2_2:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width -11.3, mcu_position_height - 1]
+        params:
+          net: COL2
+
+      via_col1_3:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width -10.5, mcu_position_height - 2.5]
+        params:
+          net: COL1
+
+      via_col0_3:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width -9.7, mcu_position_height - 4]
+        params:
+          net: COL0
+
+      # via_row1_1:
+      #   what: via
+      #   where:
+      #     ref: finger-zone_ring_home
+      #     shift: [ 0.5 * key_width - 2.5, -2.7]
+      #   params:
+      #     net: ROW1
+
+      # via_row1_2:
+      #   what: via
+      #   where:
+      #     ref: finger-zone_ring_bottom
+      #     shift: [ 0.5 * key_width - 2.5 , 0.5 * key_height - 2]
+      #   params:
+      #     net: ROW1
+
+      # MCU Left
+      right_via-gnd-1: 
+        what: via
+        where:
+          ref: mirror_finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 5.8, mcu_position_height + 9.2]
+        params:
+          net: GND
+
+      right_via-gnd-2:
+        what: via
+        where:
+          ref: mirror_finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 2.6, mcu_position_height + 9.2]
+        params:
+          net: GND
+
+      right_via-row0-1:
+        what: via
+        where:
+          ref: mirror_finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 4.3, mcu_position_height + 11.52]
+        params:
+          net: ROW0
+
+      right_via-row0-2:
+        what: via
+        where:
+          ref: mirror_finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 4.3, mcu_position_height - 7.3]
+        params:
+          net: ROW0
+
+      right_via-cs-1:
+        what: via
+        where:
+          ref: mirror_finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 5, mcu_position_height + 13]
+        params:
+          net: CS
+
+      right_via-mosi-1:
+        what: via
+        where:
+          ref: mirror_finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 5.1, mcu_position_height + 2.8]
+        params:
+          net: MOSI
+
+      right_via-sck-1:
+        what: via
+        where:
+          ref: mirror_finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 2.6, mcu_position_height + 0.3]
+        params:
+          net: SCK
+
+      right_via-raw-1:
+        what: via
+        where:
+          ref: mirror_finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 3.3, mcu_position_height + 13]
+        params:
+          net: RAW
+
+      right_via-positive-1:
+        what: via
+        where:
+          ref: mirror_finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 0.3, mcu_position_height + 13]
+        params:
+          net: POSITIVE
+
+      right_via-vcc-1:
+        what: via
+        where:
+          ref: mirror_finger-zone_inner_home
+          shift: [key_width + mcu_padding_width, mcu_position_height + 5.3]
+        params:
+          net: VCC
+
+      right_via-row1-1:
+        what: via
+        where:
+          ref: mirror_finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 5.8, mcu_position_height + 1.6]
+        params:
+          net: ROW1
+
+      # Lower Section Left
+      right_via_reset-1:
+        what: via
+        where:
+          ref: mirror_finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 6.4, mcu_position_height - 27]
+        params:
+          net: RST
+
+      right_via_col4_1:
+        what: via
+        where:
+          ref: mirror_thumb-zone_outer_sole
+          shift: [5.8 , 5.7]
+        params:
+          net: COL4
+
+      right_via_col4_2:
+        what: via
+        where:
+          ref: mirror_finger-zone_inner_bottom
+          shift: [3.25 , 3.6]
+        params:
+          net: COL4
+
+      # via_col3_1:
+      #   what: via
+      #   where:
+      #     ref: thumb-zone_inner_sole
+      #     shift: [-5.8 , 5.7]
+      #   params:
+      #     net: COL3
+
+      right_via_col3_2:
+        what: via
+        where:
+          ref: mirror_finger-zone_index_bottom
+          shift: [3.25 , 3.6]
+        params:
+          net: COL3
+
+      right_via_col0_1:
+        what: via
+        where:
+          ref: mirror_finger-zone_pinky_bottom
+          shift: [3.25 , 8.2]
+        params:
+          net: COL0
+
+      right_via_col1_1:
+        what: via
+        where:
+          ref: mirror_finger-zone_ring_bottom
+          shift: [3.25 , 8.2]
+        params:
+          net: COL1
+
+      right_via_col2_1:
+        what: via
+        where:
+          ref: mirror_finger-zone_middle_bottom
+          shift: [3.25 , 8.2]
+        params:
+          net: COL2
+
+      right_via_col2_2:
+        what: via
+        where:
+          ref: mirror_finger-zone_inner_home
+          shift: [(key_width + mcu_padding_width -11.3) * -1, mcu_position_height - 1]
+        params:
+          net: COL2
+
+      right_via_col1_3:
+        what: via
+        where:
+          ref: mirror_finger-zone_inner_home
+          shift: [(key_width + mcu_padding_width -10.5) * -1, mcu_position_height - 2.5]
+        params:
+          net: COL1
+
+      right_via_col0_3:
+        what: via
+        where:
+          ref: mirror_finger-zone_inner_home
+          shift: [(key_width + mcu_padding_width -9.7) * -1, mcu_position_height - 4]
+        params:
+          net: COL0
+
+      # via_row1_1:
+      #   what: via
+      #   where:
+      #     ref: finger-zone_ring_home
+      #     shift: [ 0.5 * key_width - 2.5, -2.7]
+      #   params:
+      #     net: ROW1
+
+      # via_row1_2:
+      #   what: via
+      #   where:
+      #     ref: finger-zone_ring_bottom
+      #     shift: [ 0.5 * key_width - 2.5 , 0.5 * key_height - 2]
+      #   params:
+      #     net: ROW1
