@@ -130,7 +130,7 @@
           "td_curve_segcount": 5,
           "td_on_pad_in_zone": false,
           "td_onpadsmd": true,
-          "td_onroundshapesonly": true,
+          "td_onroundshapesonly": false,
           "td_ontrackend": false,
           "td_onviapad": true
         }
@@ -148,7 +148,7 @@
         {
           "td_curve_segcount": 0,
           "td_height_ratio": 1.0,
-          "td_length_ratio": 0.2,
+          "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
           "td_maxlen": 1.0,
           "td_target_name": "td_rect_shape",
@@ -180,7 +180,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "dyad-choc-v1.kicad_pro",
+    "filename": "dyad-choc-v1-draft.kicad_pro",
     "version": 1
   },
   "net_settings": {

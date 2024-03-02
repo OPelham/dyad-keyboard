@@ -21,11 +21,21 @@ module.exports = {
 	  (fp_line (start 2.4 -1.65) (end -2.4 -1.65) (layer F.CrtYd) (width 0.05))
 	  (fp_line (start 2.4 1.65) (end 2.4 -1.65) (layer F.CrtYd) (width 0.05))
 	  (fp_line (start -2.4 1.65) (end 2.4 1.65) (layer F.CrtYd) (width 0.05))
+	  (fp_circle (center 0 0) (end 0.75 0) (layer B.Fab) (width 0.1))
+	  (fp_line (start -1.5 1.25) (end -1.5 -1.25) (layer B.Fab) (width 0.1))
+	  (fp_line (start 1.5 1.25) (end -1.5 1.25) (layer B.Fab) (width 0.1))
+	  (fp_line (start 1.5 -1.25) (end 1.5 1.25) (layer B.Fab) (width 0.1))
+	  (fp_line (start -1.5 -1.25) (end 1.5 -1.25) (layer B.Fab) (width 0.1))
+	  (fp_line (start -2.4 -1.65) (end -2.4 1.65) (layer B.CrtYd) (width 0.05))
+	  (fp_line (start 2.4 -1.65) (end -2.4 -1.65) (layer B.CrtYd) (width 0.05))
+	  (fp_line (start 2.4 1.65) (end 2.4 -1.65) (layer B.CrtYd) (width 0.05))
+	  (fp_line (start -2.4 1.65) (end 2.4 1.65) (layer B.CrtYd) (width 0.05))
 	  (fp_text user %R (at 0 -2.5) (layer F.Fab)
 	    (effects (font (size 1 1) (thickness 0.15)))
 
 	  )
       (fp_text user "Reset" (at 0 -3 ${p.rot}) (layer F.SilkS knockout) (effects (font (size 0.8 0.8) (thickness 0.15))))
+	  (fp_text user "Reset" (at 0 -3 ${p.rot}) (layer B.SilkS knockout) (effects (font (size 0.8 0.8) (thickness 0.15))))
 
 	      `
 	    function pins(def_neg, def_pos, def_side) {
