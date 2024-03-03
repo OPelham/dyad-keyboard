@@ -50,7 +50,7 @@ module.exports = {
 	      return `
 		${standard}
 		${pins('-', '', 'B')}
-		${pins('', '-', 'F')})
+		${pins('-', '', 'F')})
 		`
 	    } else {
 	      return `

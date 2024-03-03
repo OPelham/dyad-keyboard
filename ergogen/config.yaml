@@ -175,6 +175,22 @@ pcbs:
         adjust:
           shift: [0, -4]
 
+      via-diode-1:
+        what: via
+        where: true
+        params:
+          net: "{{row_net}}"
+        adjust:
+          shift: [-1.6, -2.5]
+
+      via-diode-2:
+        what: via
+        where: true
+        params:
+          net: "{{colrow}}"
+        adjust:
+          shift: [1.6, -2.5]
+
       via-row:
         what: via
         where: true
@@ -264,46 +280,6 @@ pcbs:
         params:
           net: ROW0
 
-      via-cs-1:
-        what: via
-        where:
-          ref: finger-zone_inner_home
-          shift: [key_width + mcu_padding_width + 5, mcu_position_height + 13]
-        params:
-          net: CS
-
-      via-mosi-1:
-        what: via
-        where:
-          ref: finger-zone_inner_home
-          shift: [key_width + mcu_padding_width - 5.1, mcu_position_height + 2.8]
-        params:
-          net: MOSI
-
-      via-sck-1:
-        what: via
-        where:
-          ref: finger-zone_inner_home
-          shift: [key_width + mcu_padding_width - 2.6, mcu_position_height + 0.3]
-        params:
-          net: SCK
-
-      via-raw-1:
-        what: via
-        where:
-          ref: finger-zone_inner_home
-          shift: [key_width + mcu_padding_width - 3.3, mcu_position_height + 13]
-        params:
-          net: RAW
-
-      via-vcc-1:
-        what: via
-        where:
-          ref: finger-zone_inner_home
-          shift: [key_width + mcu_padding_width, mcu_position_height + 5.3]
-        params:
-          net: VCC
-
       via-row1-1:
         what: via
         where:
@@ -319,3 +295,11 @@ pcbs:
           shift: [key_width + mcu_padding_width - 6.4, mcu_position_height - 23]
         params:
           net: RST
+
+      via-reset-2: 
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 5.8, mcu_position_height - 23]
+        params:
+          net: GND
