@@ -2506,25 +2506,25 @@
           (fp_text user ROW2 (at 11.43 -6.3 0) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right)))
           (fp_text user ROW3 (at 13.97 -6.3 0) (layer F.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right)))
 
-          (fp_text user RAW (at -13.97 6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
-          (fp_text user GND (at -11.43 6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
-          (fp_text user RST (at -8.89 6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
-          (fp_text user VCC (at -6.35 6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
-          (fp_text user COL0 (at 3.81 6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
-          (fp_text user COL1 (at 6.35 6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
+          (fp_text user CS (at -13.97 6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
+          (fp_text user GND (at -8.89 6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
+          (fp_text user GND (at -6.35 6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
+          (fp_text user MOSI (at -3.81 6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
+          (fp_text user SCK (at -1.27 6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
+          (fp_text user ROW0 (at 6.35 6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
           (fp_text user COL2 (at 8.89 6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
-          (fp_text user COL3 (at 11.43 6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
-          (fp_text user COL4 (at 13.97 6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
+          (fp_text user ROW1 (at 11.43 6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
+          (fp_text user ROW3 (at 13.97 6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror)))
        
-          (fp_text user CS (at -13.97 -6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
-          (fp_text user GND (at -8.89 -6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
-          (fp_text user GND (at -6.35 -6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
-          (fp_text user MOSI (at -3.81 -6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
-          (fp_text user SCK (at -1.27 -6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
-          (fp_text user ROW0 (at 6.35 -6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
-          (fp_text user ROW1 (at 8.89 -6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
-          (fp_text user ROW2 (at 11.43 -6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
-          (fp_text user ROW3 (at 13.97 -6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
+          (fp_text user RAW (at -13.97 -6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
+          (fp_text user GND (at -11.43 -6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
+          (fp_text user RST (at -8.89 -6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
+          (fp_text user VCC (at -6.35 -6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
+          (fp_text user COL0 (at 3.81 -6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
+          (fp_text user COL1 (at 6.35 -6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
+          (fp_text user COL2 (at 8.89 -6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
+          (fp_text user COL3 (at 11.43 -6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
+          (fp_text user COL4 (at 13.97 -6.3 0) (layer B.SilkS) (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror)))
   
           
           (fp_text user "Nice!Nano" (at 0 1 -90) (layer F.SilkS knockout) (effects (font (size 1.2 1.2) (thickness 0.20))))
@@ -2533,7 +2533,7 @@
           (fp_text user "Nice!Nano" (at -4.7 1 -90) (layer B.SilkS knockout) (effects (font (size 1.2 1.2) (thickness 0.20)) (justify left mirror)))
           (fp_text user "Place face Up" (at -4.7 -1.6 -90) (layer B.SilkS) (effects (font (size 1.0 1.0) (thickness 0.15)) (justify left mirror)))
 
-          (fp_text user "SOCIUS v0.1" (at 17 0 0) (layer F.SilkS knockout) (effects (font (size 1.2 1.2) (thickness 0.20))))
+          (fp_text user "SOCIUS v0.3" (at 17 0 0) (layer F.SilkS knockout) (effects (font (size 1.2 1.2) (thickness 0.20))))
 
         
           
@@ -2543,62 +2543,206 @@
           (pad 2 thru_hole circle (at -11.43 7.62 0) (size 2 2) (drill 1.0922) (layers F.Cu F.SilkS F.Mask) (net 28 "GND"))
           (pad 14 thru_hole circle (at -11.43 7.62 0) (size 2 2) (drill 1.0922) (layers B.Cu B.SilkS B.Mask) (net 35 "P0"))
 
+          (pad 3 thru_hole circle (at -8.89 7.62 0) (size 2 2) (drill 1.0922) (layers F.Cu F.SilkS F.Mask) (net 29 "RST"))
+          (pad 15 thru_hole circle (at -8.89 7.62 0) (size 2 2) (drill 1.0922) (layers B.Cu B.SilkS B.Mask) (net 28 "GND"))
 
-          (pad 3 thru_hole circle (at -8.89 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 29 "RST"))
-          (pad 4 thru_hole circle (at -6.35 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 30 "VCC"))
-          (pad 5 thru_hole circle (at -3.81 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 31 "P21"))
-          (pad 6 thru_hole circle (at -1.27 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 32 "P20"))
-          (pad 7 thru_hole circle (at 1.27 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 33 "P19"))
-          (pad 8 thru_hole circle (at 3.81 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 1 "COL0"))
-          (pad 9 thru_hole circle (at 6.35 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 5 "COL1"))
-          (pad 10 thru_hole circle (at 8.89 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 9 "COL2"))
-          (pad 11 thru_hole circle (at 11.43 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 13 "COL3"))
-          (pad 12 thru_hole circle (at 13.97 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 17 "COL4"))
-          
+          (pad 4 thru_hole circle (at -6.35 7.62 0) (size 2 2) (drill 1.0922) (layers F.Cu F.SilkS F.Mask) (net 30 "VCC"))
+          (pad 16 thru_hole circle (at -6.35 7.62 0) (size 2 2) (drill 1.0922) (layers B.Cu B.SilkS B.Mask) (net 28 "GND"))
+
+          (pad 5 thru_hole circle (at -3.81 7.62 0) (size 2 2) (drill 1.0922) (layers F.Cu F.SilkS F.Mask) (net 31 "P21"))
+          (pad 17 thru_hole circle (at -3.81 7.62 0) (size 2 2) (drill 1.0922) (layers B.Cu B.SilkS B.Mask) (net 36 "MOSI"))
+
+          (pad 6 thru_hole circle (at -1.27 7.62 0) (size 2 2) (drill 1.0922) (layers F.Cu F.SilkS F.Mask) (net 32 "P20"))
+          (pad 18 thru_hole circle (at -1.27 7.62 0) (size 2 2) (drill 1.0922) (layers B.Cu B.SilkS B.Mask) (net 37 "SCK"))
+
+          (pad 7 thru_hole circle (at 1.27 7.62 0) (size 2 2) (drill 1.0922) (layers F.Cu F.SilkS F.Mask) (net 33 "P19"))
+          (pad 19 thru_hole circle (at 1.27 7.62 0) (size 2 2) (drill 1.0922) (layers B.Cu B.SilkS B.Mask) (net 38 "P4"))
+
+          (pad 8 thru_hole circle (at 3.81 7.62 0) (size 2 2) (drill 1.0922) (layers F.Cu F.SilkS F.Mask) (net 1 "COL0"))
+          (pad 20 thru_hole circle (at 3.81 7.62 0) (size 2 2) (drill 1.0922) (layers B.Cu B.SilkS B.Mask) (net 39 "P5"))
+
+          (pad 9 thru_hole circle (at 6.35 7.62 0) (size 2 2) (drill 1.0922) (layers F.Cu F.SilkS F.Mask) (net 5 "COL1"))
+          (pad 21 thru_hole circle (at 6.35 7.62 0) (size 2 2) (drill 1.0922) (layers B.Cu B.SilkS B.Mask) (net 25 "ROW0"))
+
+          (pad 10 thru_hole circle (at 8.89 7.62 0) (size 2 2) (drill 1.0922) (layers F.Cu F.SilkS F.Mask) (net 9 "COL2"))
+          (pad 22 thru_hole circle (at 8.89 7.62 0) (size 2 2) (drill 1.0922) (layers B.Cu B.SilkS B.Mask) (net 24 "ROW1"))
+
+          (pad 11 thru_hole circle (at 11.43 7.62 0) (size 2 2) (drill 1.0922) (layers F.Cu F.SilkS F.Mask) (net 13 "COL3"))
+          (pad 23 thru_hole circle (at 11.43 7.62 0) (size 2 2) (drill 1.0922) (layers B.Cu B.SilkS B.Mask) (net 23 "ROW2"))
+
+          (pad 12 thru_hole circle (at 13.97 7.62 0) (size 2 2) (drill 1.0922) (layers F.Cu F.SilkS F.Mask) (net 17 "COL4"))
+          (pad 24 thru_hole circle (at 13.97 7.62 0) (size 2 2) (drill 1.0922) (layers B.Cu B.SilkS B.Mask) (net 26 "ROW3"))
+
           (pad 13 thru_hole circle (at -13.97 -7.62 0) (size 2 2) (drill 1.0922) (layers F.Cu F.SilkS F.Mask) (net 34 "CS"))
           (pad 1 thru_hole circle (at -13.97 -7.62 0) (size 2 2) (drill 1.0922) (layers B.Cu B.SilkS B.Mask) (net 27 "RAW"))
 
           (pad 14 thru_hole circle (at -11.43 -7.62 0) (size 2 2) (drill 1.0922) (layers F.Cu F.SilkS F.Mask) (net 35 "P0"))
           (pad 2 thru_hole circle (at -11.43 -7.62 0) (size 2 2) (drill 1.0922) (layers B.Cu B.SilkS B.Mask) (net 28 "GND"))
 
-          (pad 15 thru_hole circle (at -8.89 -7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 28 "GND"))
-          (pad 16 thru_hole circle (at -6.35 -7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 28 "GND"))
-          (pad 17 thru_hole circle (at -3.81 -7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 36 "MOSI"))
-          (pad 18 thru_hole circle (at -1.27 -7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 37 "SCK"))
-          (pad 19 thru_hole circle (at 1.27 -7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 38 "P4"))
-          (pad 20 thru_hole circle (at 3.81 -7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 39 "P5"))
-          (pad 21 thru_hole circle (at 6.35 -7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 25 "ROW0"))
-          (pad 22 thru_hole circle (at 8.89 -7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 24 "ROW1"))
-          (pad 23 thru_hole circle (at 11.43 -7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 23 "ROW2"))
-          (pad 24 thru_hole circle (at 13.97 -7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (net 26 "ROW3"))
-  
+          (pad 15 thru_hole circle (at -8.89 -7.62 0) (size 2 2) (drill 1.0922) (layers F.Cu F.SilkS F.Mask) (net 28 "GND"))
+          (pad 3 thru_hole circle (at -8.89 -7.62 0) (size 2 2) (drill 1.0922) (layers B.Cu B.SilkS B.Mask) (net 29 "RST"))
+
+          (pad 16 thru_hole circle (at -6.35 -7.62 0) (size 2 2) (drill 1.0922) (layers F.Cu F.SilkS F.Mask) (net 28 "GND"))
+          (pad 4 thru_hole circle (at -6.35 -7.62 0) (size 2 2) (drill 1.0922) (layers B.Cu B.SilkS B.Mask) (net 30 "VCC"))
+
+          (pad 17 thru_hole circle (at -3.81 -7.62 0) (size 2 2) (drill 1.0922) (layers F.Cu F.SilkS F.Mask) (net 36 "MOSI"))
+          (pad 5 thru_hole circle (at -3.81 -7.62 0) (size 2 2) (drill 1.0922) (layers B.Cu B.SilkS B.Mask) (net 31 "P21"))
+
+          (pad 18 thru_hole circle (at -1.27 -7.62 0) (size 2 2) (drill 1.0922) (layers F.Cu F.SilkS F.Mask) (net 37 "SCK"))
+          (pad 6 thru_hole circle (at -1.27 -7.62 0) (size 2 2) (drill 1.0922) (layers B.Cu B.SilkS B.Mask) (net 32 "P20"))
+
+          (pad 19 thru_hole circle (at 1.27 -7.62 0) (size 2 2) (drill 1.0922) (layers F.Cu F.SilkS F.Mask) (net 38 "P4"))
+          (pad 7 thru_hole circle (at 1.27 -7.62 0) (size 2 2) (drill 1.0922) (layers B.Cu B.SilkS B.Mask) (net 33 "P19"))
+
+          (pad 20 thru_hole circle (at 3.81 -7.62 0) (size 2 2) (drill 1.0922) (layers F.Cu F.SilkS F.Mask) (net 39 "P5"))
+          (pad 8 thru_hole circle (at 3.81 -7.62 0) (size 2 2) (drill 1.0922) (layers B.Cu B.SilkS B.Mask) (net 1 "COL0"))
+
+          (pad 21 thru_hole circle (at 6.35 -7.62 0) (size 2 2) (drill 1.0922) (layers F.Cu F.SilkS F.Mask) (net 25 "ROW0"))
+          (pad 9 thru_hole circle (at 6.35 -7.62 0) (size 2 2) (drill 1.0922) (layers B.Cu B.SilkS B.Mask) (net 5 "COL1"))
+
+          (pad 22 thru_hole circle (at 8.89 -7.62 0) (size 2 2) (drill 1.0922) (layers F.Cu F.SilkS F.Mask) (net 24 "ROW1"))
+          (pad 10 thru_hole circle (at 8.89 -7.62 0) (size 2 2) (drill 1.0922) (layers B.Cu B.SilkS B.Mask) (net 9 "COL2"))
+
+          (pad 23 thru_hole circle (at 11.43 -7.62 0) (size 2 2) (drill 1.0922) (layers F.Cu F.SilkS F.Mask) (net 23 "ROW2"))
+          (pad 11 thru_hole circle (at 11.43 -7.62 0) (size 2 2) (drill 1.0922) (layers B.Cu B.SilkS B.Mask) (net 13 "COL3"))
+
+          (pad 24 thru_hole circle (at 13.97 -7.62 0) (size 2 2) (drill 1.0922) (layers F.Cu F.SilkS F.Mask) (net 26 "ROW3"))
+          (pad 12 thru_hole circle (at 13.97 -7.62 0) (size 2 2) (drill 1.0922) (layers B.Cu B.SilkS B.Mask) (net 17 "COL4"))
         
 
           
           
-          (pad "" connect rect (at -13.97 6 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 27 "RAW"))
-          (pad "" connect rect (at -13.97 5 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 27 "RAW"))
-          (pad "" connect rect (at -13.97 6 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 34 "CS"))
-          (pad "" connect rect (at -13.97 5 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 34 "CS"))
+          (pad "" connect rect (at -13.97 5.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 27 "RAW"))
+          (pad "" connect rect (at -13.97 4.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 27 "RAW"))
+          (pad "" connect rect (at -13.97 5.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 34 "CS"))
+          (pad "" connect rect (at -13.97 4.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 34 "CS"))
           
-          (pad "" connect rect (at -13.97 -6 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 27 "RAW"))
-          (pad "" connect rect (at -13.97 -5 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 27 "RAW"))
-          (pad "" connect rect (at -13.97 -6 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 34 "CS"))
-          (pad "" connect rect (at -13.97 -5 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 34 "CS"))
-          
-          
-          (pad "" connect rect (at -11.47 6 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 28 "GND"))
-          (pad "" connect rect (at -11.47 5 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 28 "GND"))
-          (pad "" connect rect (at -11.47 6 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 35 "P0"))
-          (pad "" connect rect (at -11.47 5 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 35 "P0"))
-          
-          (pad "" connect rect (at -11.47 -6 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 28 "GND"))
-          (pad "" connect rect (at -11.47 -5 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 28 "GND"))
-          (pad "" connect rect (at -11.47 -6 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 35 "P0"))
-          (pad "" connect rect (at -11.47 -5 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 35 "P0"))
+          (pad "" connect rect (at -13.97 -5.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 27 "RAW"))
+          (pad "" connect rect (at -13.97 -4.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 27 "RAW"))
+          (pad "" connect rect (at -13.97 -5.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 34 "CS"))
+          (pad "" connect rect (at -13.97 -4.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 34 "CS"))
           
           
+          (pad "" connect rect (at -11.43 5.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 28 "GND"))
+          (pad "" connect rect (at -11.43 4.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 28 "GND"))
+          (pad "" connect rect (at -11.43 5.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 35 "P0"))
+          (pad "" connect rect (at -11.43 4.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 35 "P0"))
           
+          (pad "" connect rect (at -11.43 -5.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 28 "GND"))
+          (pad "" connect rect (at -11.43 -4.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 28 "GND"))
+          (pad "" connect rect (at -11.43 -5.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 35 "P0"))
+          (pad "" connect rect (at -11.43 -4.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 35 "P0"))
+
+          
+          (pad "" connect rect (at -8.89 5.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 29 "RST"))
+          (pad "" connect rect (at -8.89 4.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 29 "RST"))
+          (pad "" connect rect (at -8.89 5.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 28 "GND"))
+          (pad "" connect rect (at -8.89 4.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 28 "GND"))
+          
+          (pad "" connect rect (at -8.89 -5.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 29 "RST"))
+          (pad "" connect rect (at -8.89 -4.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 29 "RST"))
+          (pad "" connect rect (at -8.89 -5.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 28 "GND"))
+          (pad "" connect rect (at -8.89 -4.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 28 "GND"))
+
+          
+          (pad "" connect rect (at -6.35 5.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 30 "VCC"))
+          (pad "" connect rect (at -6.35 4.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 30 "VCC"))
+          (pad "" connect rect (at -6.35 5.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 28 "GND"))
+          (pad "" connect rect (at -6.35 4.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 28 "GND"))
+          
+          (pad "" connect rect (at -6.35 -5.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 30 "VCC"))
+          (pad "" connect rect (at -6.35 -4.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 30 "VCC"))
+          (pad "" connect rect (at -6.35 -5.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 28 "GND"))
+          (pad "" connect rect (at -6.35 -4.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 28 "GND"))
+
+          
+          (pad "" connect rect (at -3.81 5.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 31 "P21"))
+          (pad "" connect rect (at -3.81 4.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 31 "P21"))
+          (pad "" connect rect (at -3.81 5.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 36 "MOSI"))
+          (pad "" connect rect (at -3.81 4.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 36 "MOSI"))
+          
+          (pad "" connect rect (at -3.81 -5.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 31 "P21"))
+          (pad "" connect rect (at -3.81 -4.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 31 "P21"))
+          (pad "" connect rect (at -3.81 -5.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 36 "MOSI"))
+          (pad "" connect rect (at -3.81 -4.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 36 "MOSI"))
+          
+          
+          (pad "" connect rect (at -1.27 5.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 32 "P20"))
+          (pad "" connect rect (at -1.27 4.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 32 "P20"))
+          (pad "" connect rect (at -1.27 5.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 37 "SCK"))
+          (pad "" connect rect (at -1.27 4.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 37 "SCK"))
+          
+          (pad "" connect rect (at -1.27 -5.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 32 "P20"))
+          (pad "" connect rect (at -1.27 -4.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 32 "P20"))
+          (pad "" connect rect (at -1.27 -5.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 37 "SCK"))
+          (pad "" connect rect (at -1.27 -4.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 37 "SCK"))
+          
+          
+          (pad "" connect rect (at 1.27 5.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 33 "P19"))
+          (pad "" connect rect (at 1.27 4.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 33 "P19"))
+          (pad "" connect rect (at 1.27 5.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 38 "P4"))
+          (pad "" connect rect (at 1.27 4.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 38 "P4"))
+          
+          (pad "" connect rect (at 1.27 -5.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 33 "P19"))
+          (pad "" connect rect (at 1.27 -4.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 33 "P19"))
+          (pad "" connect rect (at 1.27 -5.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 38 "P4"))
+          (pad "" connect rect (at 1.27 -4.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 38 "P4"))
+          
+          
+          (pad "" connect rect (at 3.81 5.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 1 "COL0"))
+          (pad "" connect rect (at 3.81 4.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 1 "COL0"))
+          (pad "" connect rect (at 3.81 5.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 39 "P5"))
+          (pad "" connect rect (at 3.81 4.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 39 "P5"))
+          
+          (pad "" connect rect (at 3.81 -5.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 1 "COL0"))
+          (pad "" connect rect (at 3.81 -4.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 1 "COL0"))
+          (pad "" connect rect (at 3.81 -5.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 39 "P5"))
+          (pad "" connect rect (at 3.81 -4.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 39 "P5"))
+
+          
+          (pad "" connect rect (at 6.35 5.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 5 "COL1"))
+          (pad "" connect rect (at 6.35 4.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 5 "COL1"))
+          (pad "" connect rect (at 6.35 5.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 25 "ROW0"))
+          (pad "" connect rect (at 6.35 4.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 25 "ROW0"))
+          
+          (pad "" connect rect (at 6.35 -5.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 5 "COL1"))
+          (pad "" connect rect (at 6.35 -4.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 5 "COL1"))
+          (pad "" connect rect (at 6.35 -5.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 25 "ROW0"))
+          (pad "" connect rect (at 6.35 -4.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 25 "ROW0"))
+
+          
+          (pad "" connect rect (at 8.89 5.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 9 "COL2"))
+          (pad "" connect rect (at 8.89 4.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 9 "COL2"))
+          (pad "" connect rect (at 8.89 5.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 24 "ROW1"))
+          (pad "" connect rect (at 8.89 4.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 24 "ROW1"))
+          
+          (pad "" connect rect (at 8.89 -5.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 9 "COL2"))
+          (pad "" connect rect (at 8.89 -4.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 9 "COL2"))
+          (pad "" connect rect (at 8.89 -5.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 24 "ROW1"))
+          (pad "" connect rect (at 8.89 -4.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 24 "ROW1"))
+
+          
+          (pad "" connect rect (at 11.43 5.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 13 "COL3"))
+          (pad "" connect rect (at 11.43 4.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 13 "COL3"))
+          (pad "" connect rect (at 11.43 5.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 23 "ROW2"))
+          (pad "" connect rect (at 11.43 4.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 23 "ROW2"))
+          
+          (pad "" connect rect (at 11.43 -5.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 13 "COL3"))
+          (pad "" connect rect (at 11.43 -4.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 13 "COL3"))
+          (pad "" connect rect (at 11.43 -5.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 23 "ROW2"))
+          (pad "" connect rect (at 11.43 -4.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 23 "ROW2"))
+
+          
+          (pad "" connect rect (at 13.93 5.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 17 "COL4"))
+          (pad "" connect rect (at 13.93 4.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 17 "COL4"))
+          (pad "" connect rect (at 13.93 5.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 26 "ROW3"))
+          (pad "" connect rect (at 13.93 4.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 26 "ROW3"))
+          
+          (pad "" connect rect (at 13.93 -5.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 17 "COL4"))
+          (pad "" connect rect (at 13.93 -4.8 -90) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) (net 17 "COL4"))
+          (pad "" connect rect (at 13.93 -5.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 26 "ROW3"))
+          (pad "" connect rect (at 13.93 -4.8 -90) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) (net 26 "ROW3"))
+
         )
           
 
@@ -2734,7 +2878,7 @@
 		
 
       (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
-      (at 248.5447522 123.966967 0)   
+      (at 248.8447522 123.966967 0)   
       
       (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
       (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
@@ -2745,7 +2889,7 @@
     
 
       (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
-      (at 256.7447522 123.966967 0)   
+      (at 256.4447522 123.966967 0)   
       
       (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
       (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
@@ -2756,7 +2900,7 @@
     
 
       (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
-      (at 248.5447522 125.066967 0)   
+      (at 248.8447522 125.016967 0)   
       
       (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
       (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
@@ -2767,7 +2911,7 @@
     
 
       (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
-      (at 256.7447522 125.066967 0)   
+      (at 256.4447522 125.016967 0)   
       
       (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
       (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
@@ -2778,7 +2922,7 @@
     
 
       (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
-      (at 248.5447522 126.166967 0)   
+      (at 248.8447522 126.216967 0)   
       
       (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
       (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
@@ -2789,7 +2933,7 @@
     
 
       (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
-      (at 256.7447522 126.166967 0)   
+      (at 256.4447522 126.216967 0)   
       
       (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
       (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
@@ -2800,7 +2944,7 @@
     
 
       (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
-      (at 248.5447522 127.266967 0)   
+      (at 248.8447522 127.266967 0)   
       
       (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
       (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
@@ -2811,7 +2955,7 @@
     
 
       (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
-      (at 256.7447522 127.266967 0)   
+      (at 256.4447522 127.266967 0)   
       
       (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
       (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
@@ -2822,51 +2966,7 @@
     
 
       (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
-      (at 258.4447522 127.466967 0)   
-      
-      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
-      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
-
-      
-      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 28 "GND"))
-      )
-    
-
-      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
-      (at 255.2447522 127.466967 0)   
-      
-      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
-      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
-
-      
-      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 28 "GND"))
-      )
-    
-
-      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
-      (at 256.9447522 143.966967 0)   
-      
-      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
-      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
-
-      
-      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 25 "ROW0"))
-      )
-    
-
-      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
-      (at 258.4447522 135.066967 0)   
-      
-      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
-      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
-
-      
-      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 24 "ROW1"))
-      )
-    
-
-      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
-      (at 246.2447522 159.666967 0)   
+      (at 248.8447522 128.756967 0)   
       
       (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
       (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
@@ -2877,7 +2977,447 @@
     
 
       (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
-      (at 258.4447522 159.666967 0)   
+      (at 256.4447522 128.756967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 29 "RST"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 248.8447522 129.806967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 28 "GND"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 256.4447522 129.806967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 28 "GND"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 248.8447522 131.296967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 30 "VCC"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 256.4447522 131.296967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 30 "VCC"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 248.8447522 132.346967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 28 "GND"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 256.4447522 132.346967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 28 "GND"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 248.8447522 133.836967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 31 "P21"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 256.4447522 133.836967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 31 "P21"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 248.8447522 134.886967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 36 "MOSI"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 256.4447522 134.886967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 36 "MOSI"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 248.8447522 136.376967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 32 "P20"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 256.4447522 136.376967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 32 "P20"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 248.8447522 137.426967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 37 "SCK"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 256.4447522 137.426967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 37 "SCK"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 248.8447522 138.916967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 33 "P19"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 256.4447522 138.916967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 33 "P19"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 248.8447522 139.966967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 38 "P4"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 256.4447522 139.966967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 38 "P4"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 248.8447522 141.456967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 1 "COL0"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 256.4447522 141.456967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 1 "COL0"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 248.8447522 142.506967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 39 "P5"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 256.4447522 142.506967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 39 "P5"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 248.8447522 143.996967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 5 "COL1"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 256.4447522 143.996967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 5 "COL1"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 248.8447522 145.046967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 25 "ROW0"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 256.4447522 145.046967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 25 "ROW0"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 248.8447522 146.536967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 9 "COL2"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 256.4447522 146.536967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 9 "COL2"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 248.8447522 147.586967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 24 "ROW1"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 256.4447522 147.586967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 24 "ROW1"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 248.8447522 149.076967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 13 "COL3"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 256.4447522 149.076967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 13 "COL3"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 248.8447522 150.126967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 23 "ROW2"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 256.4447522 150.126967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 23 "ROW2"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 248.8447522 151.616967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 17 "COL4"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 256.4447522 151.616967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 17 "COL4"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 248.8447522 152.666967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 26 "ROW3"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 256.4447522 152.666967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 26 "ROW3"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 249.2447522 159.666967 0)   
+      
+      (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (zone_connect 2) (net 29 "RST"))
+      )
+    
+
+      (module VIA-0.6mm (layer F.Cu) (tedit 591DBFB0)
+      (at 256.0447522 159.666967 0)   
       
       (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
       (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))

@@ -253,7 +253,7 @@ pcbs:
         what: via
         where:
           ref: finger-zone_inner_home
-          shift: [key_width + mcu_padding_width - 4.1, mcu_position_height + 12.7]
+          shift: [key_width + mcu_padding_width - 3.8, mcu_position_height + 12.7]
         params:
           net: RAW
 
@@ -261,7 +261,7 @@ pcbs:
         what: via
         where:
           ref: finger-zone_inner_home
-          shift: [key_width + mcu_padding_width + 4.1, mcu_position_height + 12.7]
+          shift: [key_width + mcu_padding_width + 3.8, mcu_position_height + 12.7]
         params:
           net: RAW
 
@@ -269,7 +269,7 @@ pcbs:
         what: via
         where:
           ref: finger-zone_inner_home
-          shift: [key_width + mcu_padding_width - 4.1, mcu_position_height + 11.6]
+          shift: [key_width + mcu_padding_width - 3.8, mcu_position_height + 11.65]
         params:
           net: CS
 
@@ -277,7 +277,7 @@ pcbs:
         what: via
         where:
           ref: finger-zone_inner_home
-          shift: [key_width + mcu_padding_width + 4.1, mcu_position_height + 11.6]
+          shift: [key_width + mcu_padding_width + 3.8, mcu_position_height + 11.65]
         params:
           net: CS
 
@@ -285,7 +285,7 @@ pcbs:
         what: via
         where:
           ref: finger-zone_inner_home
-          shift: [key_width + mcu_padding_width - 4.1, mcu_position_height + 10.5]
+          shift: [key_width + mcu_padding_width - 3.8, mcu_position_height + 10.45]
         params:
           net: GND
 
@@ -293,7 +293,7 @@ pcbs:
         what: via
         where:
           ref: finger-zone_inner_home
-          shift: [key_width + mcu_padding_width + 4.1, mcu_position_height + 10.5]
+          shift: [key_width + mcu_padding_width + 3.8, mcu_position_height + 10.45]
         params:
           net: GND
 
@@ -301,7 +301,7 @@ pcbs:
         what: via
         where:
           ref: finger-zone_inner_home
-          shift: [key_width + mcu_padding_width - 4.1, mcu_position_height + 9.4]
+          shift: [key_width + mcu_padding_width - 3.8, mcu_position_height + 9.4]
         params:
           net: P0
 
@@ -309,56 +309,377 @@ pcbs:
         what: via
         where:
           ref: finger-zone_inner_home
-          shift: [key_width + mcu_padding_width + 4.1, mcu_position_height + 9.4]
+          shift: [key_width + mcu_padding_width + 3.8, mcu_position_height + 9.4]
         params:
           net: P0
 
-      # MCU
-      via-gnd-1: 
+      via-rst-pin-1:
         what: via
         where:
           ref: finger-zone_inner_home
-          shift: [key_width + mcu_padding_width + 5.8, mcu_position_height + 9.2]
+          shift: [key_width + mcu_padding_width - 3.8, mcu_position_height + 7.91]
+        params:
+          net: RST
+
+      via-rst-pin-2:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 3.8, mcu_position_height + 7.91]
+        params:
+          net: RST
+
+      via-gnd2-pin-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 3.8, mcu_position_height + 6.86]
         params:
           net: GND
 
-      via-gnd-2:
+      via-gnd2-pin-2:
         what: via
         where:
           ref: finger-zone_inner_home
-          shift: [key_width + mcu_padding_width + 2.6, mcu_position_height + 9.2]
+          shift: [key_width + mcu_padding_width + 3.8, mcu_position_height + 6.86]
         params:
           net: GND
 
-      # via-row0-1:
-      #   what: via
-      #   where:
-      #     ref: finger-zone_inner_home
-      #     shift: [key_width + mcu_padding_width + 4.3, mcu_position_height + 11.52]
-      #   params:
-      #     net: ROW0
-
-      via-row0-2:
+      via-vcc-pin-1:
         what: via
         where:
           ref: finger-zone_inner_home
-          shift: [key_width + mcu_padding_width + 4.3, mcu_position_height - 7.3]
+          shift: [key_width + mcu_padding_width - 3.8, mcu_position_height + 5.37]
+        params:
+          net: VCC
+
+      via-vcc-pin-2:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 3.8, mcu_position_height + 5.37]
+        params:
+          net: VCC
+
+      via-gnd3-pin-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 3.8, mcu_position_height + 4.32]
+        params:
+          net: GND
+
+      via-gnd3-pin-2:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 3.8, mcu_position_height + 4.32]
+        params:
+          net: GND
+
+      via-p21-pin-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 3.8, mcu_position_height + 2.83]
+        params:
+          net: P21
+
+      via-p21-pin-2:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 3.8, mcu_position_height + 2.83]
+        params:
+          net: P21
+
+      via-mosi-pin-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 3.8, mcu_position_height + 1.78]
+        params:
+          net: MOSI
+
+      via-mosi-pin-2:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 3.8, mcu_position_height + 1.78]
+        params:
+          net: MOSI
+
+      via-p20-pin-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 3.8, mcu_position_height + 0.29]
+        params:
+          net: P20
+
+      via-p20-pin-2:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 3.8, mcu_position_height + 0.29]
+        params:
+          net: P20
+
+      via-sck-pin-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 3.8, mcu_position_height - 0.76]
+        params:
+          net: SCK
+
+      via-sck-pin-2:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 3.8, mcu_position_height - 0.76]
+        params:
+          net: SCK
+
+      via-p19-pin-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 3.8, mcu_position_height - 2.25]
+        params:
+          net: P19
+
+      via-p19-pin-2:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 3.8, mcu_position_height - 2.25]
+        params:
+          net: P19
+
+      via-p4-pin-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 3.8, mcu_position_height - 3.3]
+        params:
+          net: P4
+
+      via-p4-pin-2:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 3.8, mcu_position_height - 3.3]
+        params:
+          net: P4
+
+      via-col0-pin-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 3.8, mcu_position_height - 4.79]
+        params:
+          net: COL0
+
+      via-col0-pin-2:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 3.8, mcu_position_height - 4.79]
+        params:
+          net: COL0
+
+      via-p5-pin-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 3.8, mcu_position_height - 5.84]
+        params:
+          net: P5
+
+      via-p5-pin-2:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 3.8, mcu_position_height - 5.84]
+        params:
+          net: P5
+
+      via-col1-pin-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 3.8, mcu_position_height - 7.33]
+        params:
+          net: COL1
+
+      via-col1-pin-2:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 3.8, mcu_position_height - 7.33]
+        params:
+          net: COL1
+
+      via-row0-pin-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 3.8, mcu_position_height - 8.38]
         params:
           net: ROW0
 
-      via-row1-1:
+      via-row0-pin-2:
         what: via
         where:
           ref: finger-zone_inner_home
-          shift: [key_width + mcu_padding_width + 5.8, mcu_position_height + 1.6]
+          shift: [key_width + mcu_padding_width + 3.8, mcu_position_height - 8.38]
+        params:
+          net: ROW0
+
+      via-col2-pin-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 3.8, mcu_position_height - 9.87]
+        params:
+          net: COL2
+
+      via-col2-pin-2:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 3.8, mcu_position_height - 9.87]
+        params:
+          net: COL2
+
+      via-row1-pin-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 3.8, mcu_position_height - 10.92]
         params:
           net: ROW1
+
+      via-row1-pin-2:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 3.8, mcu_position_height - 10.92]
+        params:
+          net: ROW1
+
+      via-col3-pin-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 3.8, mcu_position_height - 12.41]
+        params:
+          net: COL3
+
+      via-col3-pin-2:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 3.8, mcu_position_height - 12.41]
+        params:
+          net: COL3
+
+      via-row2-pin-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 3.8, mcu_position_height - 13.46]
+        params:
+          net: ROW2
+
+      via-row2-pin-2:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 3.8, mcu_position_height - 13.46]
+        params:
+          net: ROW2
+
+      via-col4-pin-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 3.8, mcu_position_height - 14.95]
+        params:
+          net: COL4
+
+      via-col4-pin-2:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 3.8, mcu_position_height - 14.95]
+        params:
+          net: COL4
+
+      via-row3-pin-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 3.8, mcu_position_height - 16]
+        params:
+          net: ROW3
+
+      via-row3-pin-2:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 3.8, mcu_position_height - 16]
+        params:
+          net: ROW3
+
+
+      # MCU
+      # via-gnd-1: 
+      #   what: via
+      #   where:
+      #     ref: finger-zone_inner_home
+      #     shift: [key_width + mcu_padding_width + 5.8, mcu_position_height + 9.2]
+      #   params:
+      #     net: GND
+
+      # via-gnd-2:
+      #   what: via
+      #   where:
+      #     ref: finger-zone_inner_home
+      #     shift: [key_width + mcu_padding_width + 2.6, mcu_position_height + 9.2]
+      #   params:
+      #     net: GND
+
+      # # via-row0-1:
+      # #   what: via
+      # #   where:
+      # #     ref: finger-zone_inner_home
+      # #     shift: [key_width + mcu_padding_width + 4.3, mcu_position_height + 11.52]
+      # #   params:
+      # #     net: ROW0
+
+      # via-row0-2:
+      #   what: via
+      #   where:
+      #     ref: finger-zone_inner_home
+      #     shift: [key_width + mcu_padding_width + 4.3, mcu_position_height - 7.3]
+      #   params:
+      #     net: ROW0
+
+      # via-row1-1:
+      #   what: via
+      #   where:
+      #     ref: finger-zone_inner_home
+      #     shift: [key_width + mcu_padding_width + 5.8, mcu_position_height + 1.6]
+      #   params:
+      #     net: ROW1
 
       via_reset-1:
         what: via
         where:
           ref: finger-zone_inner_home
-          shift: [key_width + mcu_padding_width - 6.4, mcu_position_height - 23]
+          shift: [key_width + mcu_padding_width - 3.4, mcu_position_height - 23]
         params:
           net: RST
 
@@ -366,6 +687,6 @@ pcbs:
         what: via
         where:
           ref: finger-zone_inner_home
-          shift: [key_width + mcu_padding_width + 5.8, mcu_position_height - 23]
+          shift: [key_width + mcu_padding_width + 3.4, mcu_position_height - 23]
         params:
           net: GND
