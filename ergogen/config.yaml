@@ -30,6 +30,7 @@ points:
     finger-zone:
       anchor:
         shift: [160, -160] # fixing kicad placement
+        rotate: 7
       key:
         padding: key_height  # vertical spacing between keys
         spread: key_width   # horizontal spacing between keys
@@ -157,7 +158,7 @@ pcbs:
     footprints:
 
       choc_hotswap:
-        what: choc
+        what: choc_V1_V2
         where: true
         params:
           keycaps: true
@@ -173,7 +174,7 @@ pcbs:
           from: "{{colrow}}"
           to: "{{row_net}}"
         adjust:
-          shift: [0, -4]
+          shift: [0, -4.8]
 
       via-diode-1:
         what: via
@@ -181,7 +182,7 @@ pcbs:
         params:
           net: "{{row_net}}"
         adjust:
-          shift: [-1.6, -2.5]
+          shift: [-1.6, -3.3]
 
       via-diode-2:
         what: via
@@ -189,7 +190,7 @@ pcbs:
         params:
           net: "{{colrow}}"
         adjust:
-          shift: [1.6, -2.5]
+          shift: [1.6, -3.3]
 
       via-row:
         what: via
@@ -197,7 +198,7 @@ pcbs:
         params:
           net: "{{row_net}}"
         adjust:
-          shift: [-4, -4]
+          shift: [-4, -3.3]
         
       via-column-2:
         what: via
@@ -208,9 +209,9 @@ pcbs:
           shift: [-3.2, 2]
 
       mcu:
-        what: nicenano
+        what: promicro_pretty
         params:
-          orientation: "down"
+          # orientation: "down"
         where:
           ref: finger-zone_inner_home
           shift: [key_width + mcu_padding_width, mcu_position_height -1]
