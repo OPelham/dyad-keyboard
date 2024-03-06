@@ -209,7 +209,7 @@ pcbs:
           shift: [-3.2, 2]
 
       mcu:
-        what: promicro_pretty
+        what: nicenano
         params:
           # orientation: "down"
         where:
