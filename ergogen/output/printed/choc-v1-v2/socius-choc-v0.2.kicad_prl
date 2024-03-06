@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 31,
+    "active_layer": 44,
     "active_layer_preset": "All Layers",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -64,11 +64,11 @@
       39,
       40
     ],
-    "visible_layers": "00290aa_80000001",
+    "visible_layers": "00290aa_00000001",
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "socius-choc-v1.kicad_prl",
+    "filename": "socius-choc-v0.2.kicad_prl",
     "version": 3
   },
   "project": {

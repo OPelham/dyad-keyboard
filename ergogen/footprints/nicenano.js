@@ -109,8 +109,13 @@ module.exports = {
 
         
           ${''/* and now the actual pins */}
-          (pad 1 thru_hole circle (at -13.97 ${def_pos}7.62 ${p.rot}) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.RAW.str})
-          (pad 2 thru_hole circle (at -11.43 ${def_pos}7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.GND1.str})
+          (pad 1 thru_hole circle (at -13.97 ${def_pos}7.62 ${p.rot}) (size 2 2) (drill 1.0922) (layers F.Cu F.SilkS F.Mask) ${p.RAW.str})
+          (pad 13 thru_hole circle (at -13.97 ${def_pos}7.62 ${p.rot}) (size 2 2) (drill 1.0922) (layers B.Cu B.SilkS B.Mask) ${p.CS.str})
+
+          (pad 2 thru_hole circle (at -11.43 ${def_pos}7.62 0) (size 2 2) (drill 1.0922) (layers F.Cu F.SilkS F.Mask) ${p.GND1.str})
+          (pad 14 thru_hole circle (at -11.43 ${def_pos}7.62 0) (size 2 2) (drill 1.0922) (layers B.Cu B.SilkS B.Mask) ${p.P0.str})
+
+
           (pad 3 thru_hole circle (at -8.89 ${def_pos}7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.RST.str})
           (pad 4 thru_hole circle (at -6.35 ${def_pos}7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.VCC.str})
           (pad 5 thru_hole circle (at -3.81 ${def_pos}7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.P21.str})
@@ -122,8 +127,12 @@ module.exports = {
           (pad 11 thru_hole circle (at 11.43 ${def_pos}7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.COL3.str})
           (pad 12 thru_hole circle (at 13.97 ${def_pos}7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.COL4.str})
           
-          (pad 13 thru_hole circle (at -13.97 ${def_neg}7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.CS.str})
-          (pad 14 thru_hole circle (at -11.43 ${def_neg}7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.P0.str})
+          (pad 13 thru_hole circle (at -13.97 ${def_neg}7.62 0) (size 2 2) (drill 1.0922) (layers F.Cu F.SilkS F.Mask) ${p.CS.str})
+          (pad 1 thru_hole circle (at -13.97 ${def_neg}7.62 0) (size 2 2) (drill 1.0922) (layers B.Cu B.SilkS B.Mask) ${p.RAW.str})
+
+          (pad 14 thru_hole circle (at -11.43 ${def_neg}7.62 0) (size 2 2) (drill 1.0922) (layers F.Cu F.SilkS F.Mask) ${p.P0.str})
+          (pad 2 thru_hole circle (at -11.43 ${def_neg}7.62 0) (size 2 2) (drill 1.0922) (layers B.Cu B.SilkS B.Mask) ${p.GND1.str})
+
           (pad 15 thru_hole circle (at -8.89 ${def_neg}7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.GND2.str})
           (pad 16 thru_hole circle (at -6.35 ${def_neg}7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.GND3.str})
           (pad 17 thru_hole circle (at -3.81 ${def_neg}7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.MOSI.str})
@@ -135,9 +144,33 @@ module.exports = {
           (pad 23 thru_hole circle (at 11.43 ${def_neg}7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.ROW2.str})
           (pad 24 thru_hole circle (at 13.97 ${def_neg}7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) ${p.ROW3.str})
   
-          ${''/* rect around RAW */}
-          (pad "" thru_hole rect (at -13.97 7.62 ${p.rot}) (size 1.7526 1.7526) (drill 1.1) (layers F.Cu F.Mask) (zone_connect 0) ${p.RAW.str})
-          (pad "" thru_hole rect (at -13.97 -7.62 ${p.rot}) (size 1.7526 1.7526) (drill 1.1) (layers B.Cu B.Mask) (zone_connect 0) ${p.CS.str})
+        
+
+          ${''/* rect for reversability */}
+          ${''/* left 1 */}
+          (pad "" connect rect (at -13.97 6 ${p.rot}) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) ${p.RAW.str})
+          (pad "" connect rect (at -13.97 5 ${p.rot}) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) ${p.RAW.str})
+          (pad "" connect rect (at -13.97 6 ${p.rot}) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) ${p.CS.str})
+          (pad "" connect rect (at -13.97 5 ${p.rot}) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) ${p.CS.str})
+          ${''/* right 1 */}
+          (pad "" connect rect (at -13.97 -6 ${p.rot}) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) ${p.RAW.str})
+          (pad "" connect rect (at -13.97 -5 ${p.rot}) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) ${p.RAW.str})
+          (pad "" connect rect (at -13.97 -6 ${p.rot}) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) ${p.CS.str})
+          (pad "" connect rect (at -13.97 -5 ${p.rot}) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) ${p.CS.str})
+          
+          ${''/* left 2 */}
+          (pad "" connect rect (at -11.47 6 ${p.rot}) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) ${p.GND1.str})
+          (pad "" connect rect (at -11.47 5 ${p.rot}) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) ${p.GND1.str})
+          (pad "" connect rect (at -11.47 6 ${p.rot}) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) ${p.P0.str})
+          (pad "" connect rect (at -11.47 5 ${p.rot}) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) ${p.P0.str})
+          ${''/* right 2 */}
+          (pad "" connect rect (at -11.47 -6 ${p.rot}) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) ${p.GND1.str})
+          (pad "" connect rect (at -11.47 -5 ${p.rot}) (size 0.6 0.6) (layers B.Cu B.Mask) (zone_connect 0) ${p.GND1.str})
+          (pad "" connect rect (at -11.47 -6 ${p.rot}) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) ${p.P0.str})
+          (pad "" connect rect (at -11.47 -5 ${p.rot}) (size 0.6 0.6) (layers F.Cu F.Mask) (zone_connect 0) ${p.P0.str})
+          
+          
+          
         `
       }
       if (p.orientation == 'down') {

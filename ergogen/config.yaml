@@ -248,6 +248,71 @@ pcbs:
           r2: RST
           reverse: true
 
+      # Reversable MCU
+      via-raw-pin-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 4.1, mcu_position_height + 12.7]
+        params:
+          net: RAW
+
+      via-raw-pin-2:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 4.1, mcu_position_height + 12.7]
+        params:
+          net: RAW
+
+      via-cs-pin-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 4.1, mcu_position_height + 11.6]
+        params:
+          net: CS
+
+      via-cs-pin-2:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 4.1, mcu_position_height + 11.6]
+        params:
+          net: CS
+
+      via-gnd1-pin-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 4.1, mcu_position_height + 10.5]
+        params:
+          net: GND
+
+      via-gnd1-pin-2:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 4.1, mcu_position_height + 10.5]
+        params:
+          net: GND
+
+      via-p0-pin-1:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width - 4.1, mcu_position_height + 9.4]
+        params:
+          net: P0
+
+      via-p0-pin-2:
+        what: via
+        where:
+          ref: finger-zone_inner_home
+          shift: [key_width + mcu_padding_width + 4.1, mcu_position_height + 9.4]
+        params:
+          net: P0
+
       # MCU
       via-gnd-1: 
         what: via
@@ -265,13 +330,13 @@ pcbs:
         params:
           net: GND
 
-      via-row0-1:
-        what: via
-        where:
-          ref: finger-zone_inner_home
-          shift: [key_width + mcu_padding_width + 4.3, mcu_position_height + 11.52]
-        params:
-          net: ROW0
+      # via-row0-1:
+      #   what: via
+      #   where:
+      #     ref: finger-zone_inner_home
+      #     shift: [key_width + mcu_padding_width + 4.3, mcu_position_height + 11.52]
+      #   params:
+      #     net: ROW0
 
       via-row0-2:
         what: via
