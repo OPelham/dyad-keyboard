@@ -44,8 +44,8 @@ module.exports = {
         (pad "" np_thru_hole circle (at 0 0) (size 4.8 4.8) (drill 4.8) (layers *.Cu *.Mask))
           
         ${''/* stabilizers */}
-        (pad "" np_thru_hole circle (at 5.5 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
-        (pad "" np_thru_hole circle (at -5.5 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+        (pad "" np_thru_hole circle (at 5.5 0) (size 1.7018 1.7018) (drill 1.8) (layers *.Cu *.Mask))
+        (pad "" np_thru_hole circle (at -5.5 0) (size 1.7018 1.7018) (drill 1.8) (layers *.Cu *.Mask))
 
         (pad "" np_thru_hole circle (at -5 5.15) (size 1.6 1.6) (drill 1.6) (layers *.Cu *.Mask))
         (pad "" np_thru_hole circle (at 5 5.15) (size 1.6 1.6) (drill 1.6) (layers *.Cu *.Mask))
@@ -71,8 +71,8 @@ module.exports = {
         } else {
             return `
               ${''/* pins */}
-              (pad 1 thru_hole circle (at ${def_pos}5 -3.8) (size 2.032 2.032) (drill 1.27) (layers *.Cu *.Mask) ${p.from})
-              (pad 2 thru_hole circle (at ${def_pos}0 -5.9) (size 2.032 2.032) (drill 1.27) (layers *.Cu *.Mask) ${p.to})
+              (pad 1 thru_hole circle (at ${def_pos}5 -3.8) (size 2.032 2.032) (drill 1.28) (layers *.Cu *.Mask) ${p.from})
+              (pad 2 thru_hole circle (at ${def_pos}0 -5.9) (size 2.032 2.032) (drill 1.28) (layers *.Cu *.Mask) ${p.to})
             `
         }
       }
