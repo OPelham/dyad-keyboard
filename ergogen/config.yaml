@@ -40,18 +40,19 @@ points:
             column_net: COL0
         ring:
           key:
-            stagger: 14
+            stagger: 5
             splay: -7
             spread: 20
             column_net: COL1
         middle:
           key:
-            stagger: 6
-            spread: 18.5
+            stagger: 5
+            splay: -3
+            spread: 19.5
             column_net: COL2
         index:
           key:
-            stagger: -8
+            stagger: -7
             spread: 18.5
             column_net: COL3
         inner:
@@ -78,12 +79,12 @@ points:
       columns:
         inner:
           key:
-            splay: -15
+            splay: -10
             column_net: COL3
         outer:
           key:
-            splay: -12
-            shift: [4, -2]
+            splay: -14
+            shift: [4, -1.8]
             column_net: COL4
       rows:
         sole:
